@@ -579,6 +579,12 @@ service time_daemon /vendor/bin/time_daemon
     group system
     capabilities SYS_TIME
 
+service power_off_alarm /vendor/bin/power_off_alarm
+    class core
+    group system
+    disabled
+    oneshot
+
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
     class hal
