@@ -33,6 +33,10 @@ drm.service.enabled=true
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
+# Fling Velocity
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+
 # Graphics
 ro.opengles.version=196610
 
