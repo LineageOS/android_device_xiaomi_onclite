@@ -1205,16 +1205,6 @@ vendor/lib64/libsdm-disp-vndapis.so|b1dede9efa81e8d0374343612ad7ad0d967e8e29
 vendor/lib64/libsdmextension.so|47b7fcfb790df4417654c566af1a8a74d4bf3e2f
 vendor/lib64/libtinyxml2_1.so|56d4d5d0ea010f951de219c7b9fd2c9695a5b9d2
 
-# IOP - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|42ee66ab1e166a09aa2e9e35d0a731a772b0117f
-vendor/lib/libqti-iopd-client.so|e62e6ebc127ab2f5db77e9699fac4548b86a26f7
-vendor/lib/vendor.qti.hardware.iop@1.0.so|8525c29dde11430973e1f26339c915a52de870e9
-vendor/lib/vendor.qti.hardware.iop@2.0.so|cecd7cef970d48b0709da4eaa9e6966a083a3ab0
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so|3fd6f434ee5e9351cca7439dd3cc07e10dcf9a8a
-vendor/lib64/libqti-iopd-client.so|40155dd9b4218e317d23c23c2529cf5f709cdd9f
-vendor/lib64/vendor.qti.hardware.iop@1.0.so|a9d2a6bec613954b422a4f50fee70ec0754be65d
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|0b657aa0eaedb463ef96df94b31010449c5a34a9
-
 # Keymaster - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|13a894ea69abc056b754fa9e8f8e828ffd1de38c
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|e502c7046fb6a1955e54936d6c8f4f8c2889b201
@@ -1287,27 +1277,6 @@ vendor/lib64/libOmxQcelp13Dec.so|01786938265bd0de9adef15f695102333fca60a5
 vendor/lib64/libOmxWmaDec.so|32e1b9c72d0b0a8b74978e1687b701e18030d68a
 -vendor/lib64/libgpustats.so|a899ae72983277442cdacf8f43271986c91ce710
 vendor/lib64/libmm-color-convertor.so|d3539eb5a6a986f8ba81bac9cbf7b34872b12f1a
-
-# Perf - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
-vendor/bin/energy-awareness|def07e366347c7f0a7778b748acb49557ab21d2a
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|07b1b78015ee6d8d12ae38a5c7a3253567ee97e8
-vendor/bin/msm_irqbalance|b5e55b4b0934b65b7dd5d2201f9a70f6f77a4e7c
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc|cc8658db5e19f8e5e575fb986e7d38147e675f8d
-vendor/etc/perf/commonresourceconfigs.xml|d9fc3b49481536d6c7a25eb13f9f1d52d3ee8ff1
-vendor/etc/perf/perfboostsconfig.xml|429d7e2032a494eff1f8d0c039fa839082145b59
-vendor/etc/perf/perfconfigstore.xml|207ff980c296f4935928dd2f06e085b33bf59755
-vendor/etc/perf/targetconfig.xml|aa20c25397df1455206965737f82d44d44430e45
-vendor/etc/perf/targetresourceconfigs.xml|d9f9815764725df55e748bf4af4829e609dac853
-vendor/lib/libperfconfig.so|11f6ec2d7da51872dad2f016a6638df209adca14
-vendor/lib/libperfgluelayer.so|5c9db256d92ddf5bce65941f2cad5eaeb4f028fd
-vendor/lib/libqti-perfd-client.so|ca0e9b4e029985949b8c0fcc9e9a7d543a7a789e
-vendor/lib/libqti-perfd.so|855dd68c8a277c8b4787579a935a23bead62dd59
-vendor/lib/libqti-util.so|f1a4d655ee827d791447f303e59197e7271fafb5
-vendor/lib64/libperfconfig.so|d590b6ce31c8b2158a3653c9248f5c12139d27cd
-vendor/lib64/libperfgluelayer.so|269245742c7628539e9d86a1fa4b9ba2551774e3
-vendor/lib64/libqti-perfd-client.so|754fc2b05a5c81825108cfcdfc036156216592a9
-vendor/lib64/libqti-perfd.so|f252bc957f45dd389463abe97be3f0f129da8b67
-vendor/lib64/libqti-util.so|e790b62bb198442145fcba20c2dc61d182c45a47
 
 # Peripheral manager - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
 vendor/bin/pm-proxy|1f216a6f54e9b97c026f3f3bc4d7d441d58d90a7

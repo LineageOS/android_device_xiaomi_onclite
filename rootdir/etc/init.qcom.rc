@@ -346,15 +346,7 @@ on post-fs-data
     write /sys/class/drm/card0/device/idle_encoder_mask 1
     write /sys/class/drm/card0/device/idle_timeout_ms 100
 
-    #Create PERFD deamon related dirs
-    mkdir /data/vendor/perfd 0770 root system
-    chmod 2770 /data/vendor/perfd
-    rm /data/vendor/perfd/default_values
-
     mkdir /data/vendor/secure_element 0777 system system
-
-    #Create IOP  deamon related dirs
-    mkdir /data/vendor/iop 0700 root system
 
     # Mark the copy complete flag to not completed
     write /data/vendor/radio/copy_complete 0
@@ -416,14 +408,6 @@ on zygote-start
 # If UART is on, enable console_suspend on boot_complete to save power
 on property:sys.boot_completed=1 && property:init.svc.console=running
     write /sys/module/printk/parameters/console_suspend Y
-
-service iop /system/vendor/bin/iop
-    class main
-    user root
-    group root
-    disabled
-    socket iop seqpacket 0666 root system
-    writepid /dev/cpuset/system-background/tasks
 
 on property:persist.vendor.sys.rawdump_copy=1
     write /sys/kernel/dload/emmc_dload 1
