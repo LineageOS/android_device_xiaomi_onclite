@@ -2275,9 +2275,9 @@ case "$target" in
             # configure governor settings for little cluster
             echo 1 > /sys/devices/system/cpu/cpu0/online
             echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
-            echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
-            echo 1363200 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
+            echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+            echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+            #echo 1363200 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
             #default value for hispeed_load is 90, for sdm632 it should be 85
             echo 85 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
             # sched_load_boost as -6 is equivalent to target load as 85.
@@ -2289,9 +2289,9 @@ case "$target" in
             # configure governor settings for big cluster
             echo 1 > /sys/devices/system/cpu/cpu4/online
             echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
-            echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
-            echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
-            echo 1401600 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
+            echo 500 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
+            echo 500 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
+            #echo 1401600 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
             #default value for hispeed_load is 90, for sdm632 it should be 85
             echo 85 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
             # sched_load_boost as -6 is equivalent to target load as 85.
@@ -2300,8 +2300,8 @@ case "$target" in
             echo -6 > /sys/devices/system/cpu/cpu7/sched_load_boost
             echo -6 > /sys/devices/system/cpu/cpu6/sched_load_boost
 
-            echo 614400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-            echo 633600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+            #echo 614400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+            #echo 633600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
             # cpuset settings
             echo 0-3 > /dev/cpuset/background/cpus
