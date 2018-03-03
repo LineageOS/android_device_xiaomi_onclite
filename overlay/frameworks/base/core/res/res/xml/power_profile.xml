@@ -49,8 +49,8 @@
     <item name="wifi.on">1</item>
     <item name="wifi.active">100</item>
     <item name="wifi.scan">30</item>
-    <item name="dsp.audio">22</item>
-    <item name="dsp.video">80</item>
+    <item name="audio">22</item>
+    <item name="video">80</item>
     <item name="camera.flashlight">121</item>
     <item name="camera.avg">400</item>
     <item name="gps.on">100</item>
