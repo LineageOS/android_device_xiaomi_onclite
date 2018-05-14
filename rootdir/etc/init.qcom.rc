@@ -404,6 +404,7 @@ on property:vendor.post_boot.parsed=1
     chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
     chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
     chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_length
+    chown system system /sys/kernel/debug/sched_features
 
 # If UART is on, enable console_suspend on boot_complete to save power
 on property:sys.boot_completed=1 && property:init.svc.console=running
