@@ -2,10 +2,13 @@
 genfscon proc  /sys/kernel/boot_reason   u:object_r:proc_boot_reason:s0
 
 # Power HAL
-genfscon debugfs /sched_features                      u:object_r:debugfs_sched_features:s0
-genfscon proc /sys/kernel/sched_autogroup_enabled     u:object_r:proc_sysctl_autogroup:s0
-genfscon sysfs /power/rpmh_stats/master_stats     u:object_r:sysfs_rpm:s0
-genfscon sysfs /power/system_sleep/stats          u:object_r:sysfs_system_sleep_stats:s0
+genfscon debugfs /sched_features                          u:object_r:debugfs_sched_features:s0
+genfscon proc /sys/kernel/sched_autogroup_enabled         u:object_r:proc_sysctl_autogroup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,cpubw       u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,gpubw       u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,mincpubw    u:object_r:sysfs_msm_subsys:s0
+genfscon sysfs /power/rpmh_stats/master_stats             u:object_r:sysfs_rpm:s0
+genfscon sysfs /power/system_sleep/stats                  u:object_r:sysfs_system_sleep_stats:s0
 
 # Rmt
 genfscon debugfs /rmt_storage	u:object_r:debugfs_rmt:s0
