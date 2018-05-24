@@ -18,6 +18,7 @@ type keylayout_file, file_type, vendor_file_type;
 # Power
 type debugfs_sched_features, debugfs_type, fs_type;
 type proc_sysctl_autogroup, proc_type, fs_type;
+type proc_sysctl_schedboost, proc_type, fs_type;
 type sysfs_msm_subsys, sysfs_type, fs_type;
 type sysfs_rpm, sysfs_type, fs_type;
 type sysfs_system_sleep_stats, sysfs_type, fs_type;
