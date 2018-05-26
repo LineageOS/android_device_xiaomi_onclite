@@ -1,0 +1,46 @@
+# Camera
+camera.                     u:object_r:camera_prop:s0
+persist.camera.             u:object_r:camera_prop:s0
+persist.debug.sf.showfps    u:object_r:camera_dbg_prop:s0
+persist.vendor.camera.      u:object_r:camera_prop:s0
+vidhance.                   u:object_r:camera_prop:s0
+
+# Display post processing
+init.svc.ppd                             u:object_r:vendor_dpps_prop:s0
+ro.vendor.display.ad                     u:object_r:vendor_dpps_prop:s0
+ro.vendor.display.ad.sdr_calib_data      u:object_r:vendor_dpps_prop:s0
+ro.vendor.display.ad.hdr_calib_data      u:object_r:vendor_dpps_prop:s0
+ro.vendor.display.sensortype             u:object_r:vendor_dpps_prop:s0
+
+# Fingerprint
+fpc_kpi                    u:object_r:vendor_fp_prop:s0
+gf.debug.dump_bigdata_data u:object_r:vendor_fp_prop:s0
+persist.sys.fp.goodix.     u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.     u:object_r:vendor_fp_prop:s0
+ro.hardware.fp             u:object_r:vendor_fp_prop:s0
+vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
+
+# Google camera hal read only props
+ro.camera.res.fmq.size                   u:object_r:camera_ro_prop:s0
+ro.camera.req.fmq.size                   u:object_r:camera_ro_prop:s0
+ro.vendor.camera.                        u:object_r:camera_ro_prop:s0
+
+# MIUI specific
+ro.boot.factorybuild       u:object_r:exported_default_prop:s0
+ro.boot.hwversion          u:object_r:exported_default_prop:s0
+ro.carrier.name            u:object_r:exported_default_prop:s0
+ro.miui.cust_variant       u:object_r:exported_default_prop:s0
+
+# Mlipay
+persist.vendor.sys.pay.ifaa              u:object_r:vendor_tee_listener_prop:s0
+
+# PowerHAL
+vendor.powerhal.audio      u:object_r:power_prop:s0
+vendor.powerhal.init       u:object_r:power_prop:s0
+vendor.powerhal.state      u:object_r:power_prop:s0
+
+# Sensors
+persist.sensor.sardisable  u:object_r:sensors_prop:s0
+
+# Thermal
+persist.sys.thermal.       u:object_r:thermal_engine_prop:s0
