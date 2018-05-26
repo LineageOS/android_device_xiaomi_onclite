@@ -413,6 +413,9 @@ on zygote-start
 on property:sys.boot_completed=1 && property:init.svc.console=running
     write /sys/module/printk/parameters/console_suspend Y
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
 on property:persist.vendor.sys.rawdump_copy=1
     write /sys/kernel/dload/emmc_dload 1
 
