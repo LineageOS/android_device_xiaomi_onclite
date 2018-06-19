@@ -125,7 +125,8 @@
       "Values": [
         "0",
         "3"
-      ]
+      ],
+      "ResetOnInit": true
     },
     {
       "Name": "CPUBWHistMemory",
@@ -133,7 +134,8 @@
       "Values": [
         "0",
         "20"
-      ]
+      ],
+      "ResetOnInit": true
     },
     {
       "Name": "CPUBWHystLength",
@@ -141,7 +143,26 @@
       "Values": [
         "0",
         "10"
-      ]
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWSampleMs",
+      "Path": "/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/sample_ms",
+      "Values": [
+        "10",
+        "4"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWIOPercent",
+      "Path": "/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/io_percent",
+      "Values": [
+        "80",
+        "40"
+      ],
+      "ResetOnInit": true
     },
     {
       "Name": "CPUBWMinFreq",
@@ -419,6 +440,18 @@
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
       "Value": "1996800"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING",
+      "Node": "CPUBWSampleMs",
+      "Duration": 0,
+      "Value": "10"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING",
+      "Node": "CPUBWIOPercent",
+      "Duration": 0,
+      "Value": "80"
     },
     {
       "PowerHint": "AUDIO_STREAMING",
