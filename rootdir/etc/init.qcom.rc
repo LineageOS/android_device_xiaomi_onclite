@@ -485,11 +485,11 @@ service vendor.tftp_server /vendor/bin/tftp_server
    user root
    writepid /dev/cpuset/system-background/tasks
 
-on property:bluetooth.hciattach=true
-    setprop bluetooth.status on
+on property:vendor.bluetooth.hciattach=true
+    setprop vendor.bluetooth.status on
 
-on property:bluetooth.hciattach=false
-    setprop bluetooth.status off
+on property:vendor.bluetooth.hciattach=false
+    setprop vendor.bluetooth.status off
 
 service atfwd /vendor/bin/ATFWD-daemon
     class late_start
