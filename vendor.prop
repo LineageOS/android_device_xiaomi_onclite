@@ -49,6 +49,10 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 # Graphics
 ro.opengles.version=196610
 
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+
 # Keystore
 ro.hardware.keystore_desede=true
 
