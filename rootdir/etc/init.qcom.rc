@@ -579,7 +579,7 @@ service time_daemon /vendor/bin/time_daemon
     group system
     capabilities SYS_TIME
 
-service power_off_alarm /vendor/bin/power_off_alarm
+service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system
     disabled
