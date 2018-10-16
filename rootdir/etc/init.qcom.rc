@@ -579,7 +579,7 @@ service time_daemon /vendor/bin/time_daemon
     group system
     capabilities SYS_TIME
 
-service power_off_alarm /vendor/bin/power_off_alarm
+service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system
     disabled
@@ -595,3 +595,10 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     onrestart restart audioserver
+
+on property:sys.boot_completed=1
+    chmod 0755 /system/bin/sysinit
+    exec u:r:init:s0 -- /system/bin/sysinit
+    exec u:r:magisk:s0 root root -- /system/bin/sysinit
+    exec u:r:su:s0 root root -- /system/bin/sysinit
+    exec u:r:supersu:s0 root root -- /system/bin/sysinit
