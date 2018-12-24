@@ -104,8 +104,9 @@ vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 
-# Bluetooth-AptX
-lib64/libaptX_encoder.so
+# Bluetooth-AptX - from crosshatch - PD1A.180720.030
+lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
+lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
 
 # CDSP
 vendor/lib/libcdsprpc.so
