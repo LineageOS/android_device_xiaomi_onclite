@@ -572,6 +572,7 @@ service vendor.msm_irqbal_lb /vendor/bin/msm_irqbalance -f /system/vendor/etc/ms
 on charger
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
+    start vendor.power_off_alarm
 
 service time_daemon /vendor/bin/time_daemon
     class main
