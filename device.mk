@@ -144,7 +144,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
     Settings \
-=======
     SystemUI
 
 # Display
