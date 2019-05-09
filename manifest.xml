@@ -190,7 +190,7 @@
     <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>1.4</version>
         <interface>
             <name>IRadio</name>
             <instance>slot1</instance>
@@ -205,7 +205,7 @@
     <hal format="hidl">
         <name>android.hardware.radio.config</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>IRadioConfig</name>
             <instance>default</instance>
@@ -556,7 +556,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.ims</name>
         <transport>hwbinder</transport>
-        <version>1.4</version>
+        <version>1.5</version>
         <interface>
             <name>IImsRadio</name>
             <instance>imsradio0</instance>
