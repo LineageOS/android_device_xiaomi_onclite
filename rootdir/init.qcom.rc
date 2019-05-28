@@ -406,6 +406,12 @@ service iop /system/vendor/bin/iop
     socket iop seqpacket 0666 root system
     writepid /dev/cpuset/system-background/tasks
 
+on property:persist.vendor.sys.rawdump_copy=1
+    write /sys/kernel/dload/emmc_dload 1
+
+on property:persist.vendor.sys.rawdump_copy=0
+    write /sys/kernel/dload/emmc_dload 0
+
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
     #Reset read ahead for dm-0 and dm-1 to 512kb
