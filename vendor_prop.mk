@@ -47,7 +47,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.qcom.bluetooth.soc=pronto
+    vendor.qcom.bluetooth.soc=pronto \
+    vendor.bluetooth.soc=pronto
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
