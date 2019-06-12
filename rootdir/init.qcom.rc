@@ -494,7 +494,7 @@ service atfwd /vendor/bin/ATFWD-daemon
     writepid /dev/cpuset/system-background/tasks
 
 service vendor.sensors /vendor/bin/sscrpcd sensorspd
-    class core
+    class early_hal
     user system
     group system
     writepid /dev/cpuset/system-background/tasks
