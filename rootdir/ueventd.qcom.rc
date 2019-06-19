@@ -287,6 +287,7 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # GNSS PPS Device premissions
 /dev/pps*                  0660   gps     gps
+/dev/gnss_sirf             0660   gps     gps
 
 # laser sensor access
 /sys/devices/virtual/input/input*                   enable_ps_sensor 0660  system   input
