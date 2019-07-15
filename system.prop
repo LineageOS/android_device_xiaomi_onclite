@@ -14,6 +14,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qual
 vendor.camera.lowpower.record.enable=1
 vidc.enc.dcvs.extra-buff-count=2
 
+# Charger
+ro.charger.enable_suspend=true
+
 # CnE
 persist.vendor.cne.feature=1
 
