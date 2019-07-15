@@ -3,6 +3,7 @@ persist.vendor.audio.fluence.speaker=true
 persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.fluence.voicerec=false
 ro.vendor.audio.sdk.fluencetype=fluence
+vendor.audio.feature.multi_voice_session.enable=true
 vendor.audio.offload.buffer.size.kb=64
 vendor.audio.offload.gapless.enabled=true
 vendor.audio.offload.multiple.enabled=false
@@ -19,6 +20,7 @@ vendor.voice.path.for.pcm.voip=true
 vendor.voice.playback.conc.disabled=true
 vendor.voice.record.conc.disabled=false
 vendor.voice.voip.conc.disabled=true
+ro.config.vc_call_vol_steps=7
 
 # Bluetooth
 vendor.qcom.bluetooth.soc=pronto
