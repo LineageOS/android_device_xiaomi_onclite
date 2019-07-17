@@ -52,3 +52,6 @@ vendor.vidc.enc.disable.pq=true
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+
+# Radio
+persist.vendor.radio.procedure_bytes=SKIP
