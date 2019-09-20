@@ -344,4 +344,26 @@
          or a single SIM device can have 1 phones/logical modems, but 2 physical slots (one eSIM
          and one pSIM) -->
     <integer name="config_num_physical_slots">2</integer>
+
+    <!-- The bounding path of the cutout region of the main built-in display.
+         Must either be empty if there is no cutout region, or a string that is parsable by
+         {@link android.util.PathParser}.
+         The path is assumed to be specified in display coordinates with pixel units and in
+         the display's native orientation, with the origin of the coordinate system at the
+         center top of the display.
+         To facilitate writing device-independent emulation overlays, the marker `@dp` can be
+         appended after the path string to interpret coordinates in dp instead of px units.
+         Note that a physical cutout should be configured in pixels for the best results.
+         Example for a 10px x 10px square top-center cutout:
+                <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z</string>
+         Example for a 10dp x 10dp square top-center cutout:
+                <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
+         @see https://www.w3.org/TR/SVG/paths.html#PathData
+         -->
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M-60,0 L60,0 C58.925206,0.0560320974 57.8429482,0.112064195 56.7718862,0.171831765 C56.2344892,0.28389596 55.6896284,0.392224682 55.1522314,0.504288877 C54.3573317,0.825539568 53.5661639,1.14679026 52.7712642,1.46804095 C52.051003,1.96859436 51.3270098,2.46541229 50.6067486,2.96596569 C50.0133727,3.61220255 49.4237288,4.2584394 48.8266211,4.90467626 C48.3974499,5.64803542 47.9720106,6.39139458 47.5428394,7.13101826 C47.3599751,7.65024903 47.1733789,8.1694798 46.9905147,8.69244604 C46.7889908,9.74958495 46.5800031,10.8067239 46.3747473,11.8638628 C46.2851812,12.521306 46.1918831,13.1787493 46.1023169,13.8399281 C42.8965946,36.8653846 23.2256259,55 -0.00186596175,55 C-23.2256259,55 -42.8965946,36.8653846 -46.098585,13.8399281 C-46.1881511,13.1787493 -46.2851812,12.521306 -46.3747473,11.8638628 C-46.5800031,10.8067239 -46.7889908,9.74958495 -46.9942466,8.69244604 C-47.1733789,8.1694798 -47.3599751,7.65024903 -47.5428394,7.13101826 C-47.9720106,6.39139458 -48.3974499,5.64803542 -48.8266211,4.90467626 C-49.4237288,4.2584394 -50.0133727,3.61220255 -50.6067486,2.96596569 C-51.3270098,2.46541229 -52.051003,1.96859436 -52.7712642,1.46804095 C-53.5661639,1.14679026 -54.3573317,0.825539568 -55.1522314,0.504288877 C-55.6896284,0.392224682 -56.2344892,0.28389596 -56.7718862,0.171831765 C-57.8466801,0.112064195 -58.925206,0.0560320974 -60,3.29806741e-16 Z</string>
+
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">55.0px</dimen>
+    <dimen name="status_bar_height_landscape">24.0dp</dimen>
+
 </resources>
