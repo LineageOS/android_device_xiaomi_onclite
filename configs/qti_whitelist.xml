@@ -45,6 +45,7 @@
     <allow-in-power-save package="com.quicinc.voice.activation" />
     <allow-in-power-save package="com.android.mms" />
     <allow-in-power-save package="com.android.exchange" />
+    <allow-in-power-save package="com.android.email" />
     <allow-in-power-save package="com.qualcomm.qti.callenhancement" />
     <allow-in-power-save package="com.qualcomm.qti.smartassistant" />
     <allow-in-power-save package="com.skyhook.blp" />
