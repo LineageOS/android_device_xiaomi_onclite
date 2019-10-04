@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-VENDOR_PATH := device/xiaomi/msm8953-common
+DEVICE_PATH := device/xiaomi/onclite
 
 # Architecture
 TARGET_ARCH := arm64
@@ -77,7 +77,7 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8953
 TARGET_NO_BOOTLOADER := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
 
@@ -139,15 +139,15 @@ USE_DEVICE_SPECIFIC_GPS := true
 TARGET_NO_RPC := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(VENDOR_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
-DEVICE_MATRIX_FILE   := $(VENDOR_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm8953
-TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
+TARGET_INIT_VENDOR_LIB := libinit_onclite
+TARGET_RECOVERY_DEVICE_MODULES := libinit_onclite
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -181,14 +181,14 @@ TARGET_RIL_VARIANT := caf
 
 # Recovery
 ifeq ($(AB_OTA_UPDATER), true)
-TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab_AB.recovery.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab_AB.recovery.qcom
 else
-TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab.recovery.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.recovery.qcom
 endif
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
@@ -202,4 +202,4 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+-include vendor/xiaomi/onclite/BoardConfigVendor.mk

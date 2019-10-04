@@ -34,28 +34,13 @@ fi
 . "$HELPER"
 
 # Initialize the helper
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
+setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and guards
-write_headers "mido tissot"
+write_headers
 
-# The standard common blobs
+# Device blobs
 write_makefiles "$MY_DIR"/proprietary-files-qc.txt true
 
 # We are done!
 write_footers
-
-if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
-    # Reinitialize the helper for device
-    INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
-    setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false
-
-    # Copyright headers and guards
-    write_headers
-
-    # The standard device blobs
-    write_makefiles "$MY_DIR"/../$DEVICE/proprietary-files.txt true
-
-    # We are done!
-    write_footers
-fi
