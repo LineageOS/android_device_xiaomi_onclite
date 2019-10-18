@@ -38,6 +38,9 @@ vendor.vidc.dec.downscalar_width=1920
 vendor.vidc.enc.disable_bframes=1
 vendor.video.disable.ubwc=1
 
+# QC framework value-adds
+ro.vendor.qti.va_aosp.support=1
+
 # Radio
 DEVICE_PROVISIONED=1
 persist.radio.multisim.config=dsds
