@@ -138,6 +138,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.aac_51_output_enabled=true \
     media.msm8956hw=0 \
+    media.stagefright.thumbnail.prefer_hw_codecs=true \
     mm.enable.smoothstreaming=true \
     mmp.enable.3g2=true \
     persist.mm.sta.enable=0 \
