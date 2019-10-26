@@ -1855,10 +1855,6 @@ vendor/lib/libthermalfeature.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalfeature.so
 
-# Thermal-Hardware
-vendor/lib/hw/thermal.msm8953.so
-vendor/lib64/hw/thermal.msm8953.so
-
 # Time
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
