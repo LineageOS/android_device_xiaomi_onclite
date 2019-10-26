@@ -77,7 +77,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
-    ro.sf.lcd_density=440 \
     ro.vendor.display.cabl=0 \
     ro.vendor.display.sensortype=2 \
     ro.vendor.display.svi=1 \
