@@ -1471,11 +1471,11 @@ vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/vendor.qti.hardware.perf@1.0.so
 
-# Peripheral
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib64/libperipheral_client.so
+# Peripheral - from tissot-user 9 PKQ1.180917.001 V10.0.13.0.PDHMIXM release-keys
+vendor/bin/pm-proxy|56e9bdaa39270aa4456c9995a8a9e4618ba616a6
+vendor/bin/pm-service|7cbca1671529a805177f11f3f72defdbbe48a61c
+vendor/lib/libperipheral_client.so|6e06ff7e89cb8054612c98c25240e7570c069752
+vendor/lib64/libperipheral_client.so|e2fbf94c589dbf8ae6c544a34441783ae9db3a08
 
 # Postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
