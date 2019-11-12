@@ -27,27 +27,11 @@
 #define LCD_LED         LEDS "lcd-backlight/"
 #define WHITE_LED       LEDS "red/"
 
-#define BLINK           "blink"
+#define BREATH          "breath"
 #define BRIGHTNESS      "brightness"
+#define DELAY_OFF       "delay_off"
+#define DELAY_ON        "delay_on"
 #define MAX_BRIGHTNESS  "max_brightness"
-#define DUTY_PCTS       "duty_pcts"
-#define PAUSE_HI        "pause_hi"
-#define PAUSE_LO        "pause_lo"
-#define RAMP_STEP_MS    "ramp_step_ms"
-#define START_IDX       "start_idx"
-
-/*
- * 15 duty percent steps.
- */
-#define RAMP_STEPS 15
-/*
- * Each step will stay on for 150ms by default.
- */
-#define RAMP_STEP_DURATION 150
-/*
- * Each value represents a duty percent (0 - 100) for the led pwm.
- */
-static int32_t BRIGHTNESS_RAMP[RAMP_STEPS] = {0, 12, 25, 37, 50, 72, 85, 100, 85, 72, 50, 37, 25, 12, 0};
 
 namespace {
 /*
@@ -123,51 +107,20 @@ static void handleBacklight(const LightState& state) {
     set(LCD_LED BRIGHTNESS, brightness);
 }
 
-/*
- * Scale each value of the brightness ramp according to the
- * brightness of the color.
- */
-static std::string getScaledRamp(uint32_t brightness) {
-    std::string ramp, pad;
-
-    for (auto const& step : BRIGHTNESS_RAMP) {
-        ramp += pad + std::to_string(step * brightness / 0xFF);
-        pad = ",";
-    }
-
-    return ramp;
-}
-
 static void handleNotification(const LightState& state) {
     uint32_t whiteBrightness = getScaledBrightness(state, getMaxBrightness(WHITE_LED MAX_BRIGHTNESS));
 
     /* Disable blinking */
-    set(WHITE_LED BLINK, 0);
+    set(WHITE_LED BREATH, 0);
 
     if (state.flashMode == Flash::TIMED) {
-        /*
-         * If the flashOnMs duration is not long enough to fit ramping up
-         * and down at the default step duration, step duration is modified
-         * to fit.
-         */
-        int32_t stepDuration = RAMP_STEP_DURATION;
-        int32_t pauseHi = state.flashOnMs - (stepDuration * RAMP_STEPS * 2);
-        int32_t pauseLo = state.flashOffMs;
-
-        if (pauseHi < 0) {
-            //stepDuration = state.flashOnMs / (RAMP_STEPS * 2);
-            pauseHi = 0;
-        }
 
         /* White */
-        set(WHITE_LED START_IDX, 0 * RAMP_STEPS);
-        set(WHITE_LED DUTY_PCTS, getScaledRamp(whiteBrightness));
-        set(WHITE_LED PAUSE_LO, pauseLo);
-        set(WHITE_LED PAUSE_HI, pauseHi);
-        set(WHITE_LED RAMP_STEP_MS, stepDuration);
+        set(WHITE_LED DELAY_OFF, state.flashOffMs);
+        set(WHITE_LED DELAY_ON, state.flashOnMs);
 
         /* Enable blinking */
-        set(WHITE_LED BLINK, 1);
+        set(WHITE_LED BREATH, 1);
     } else {
         set(WHITE_LED BRIGHTNESS, whiteBrightness);
     }
