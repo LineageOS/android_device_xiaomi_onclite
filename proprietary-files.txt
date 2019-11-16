@@ -1794,6 +1794,7 @@ vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
 vendor/bin/fstman
 vendor/bin/nv_mac
+vendor/bin/wcnss_service
 
 # Misc
 vendor/lib/libscalar.so
