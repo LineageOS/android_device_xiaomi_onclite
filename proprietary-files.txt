@@ -1416,30 +1416,6 @@ vendor/lib64/libvpplibrary.so
 vendor/lib64/libvpptestutils.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 
-# Media-Hardware
-vendor/lib/libOmxAacEnc.so
-vendor/lib/libOmxAmrEnc.so
-vendor/lib/libOmxCore.so
-vendor/lib/libOmxEvrcEnc.so
-vendor/lib/libOmxG711Enc.so
-vendor/lib/libOmxQcelp13Enc.so
-vendor/lib/libOmxVdec.so
-vendor/lib/libOmxVenc.so
-vendor/lib/libc2dcolorconvert.so
-vendor/lib/libmm-omxcore.so
-vendor/lib/libstagefrighthw.so
-vendor/lib64/libOmxAacEnc.so
-vendor/lib64/libOmxAmrEnc.so
-vendor/lib64/libOmxCore.so
-vendor/lib64/libOmxEvrcEnc.so
-vendor/lib64/libOmxG711Enc.so
-vendor/lib64/libOmxQcelp13Enc.so
-vendor/lib64/libOmxVdec.so
-vendor/lib64/libOmxVenc.so
-vendor/lib64/libc2dcolorconvert.so
-vendor/lib64/libmm-omxcore.so
-vendor/lib64/libstagefrighthw.so
-
 # Perf
 vendor/bin/energy-awareness
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
@@ -1697,7 +1673,6 @@ vendor/lib/sensors.ssc.so
 vendor/lib64/hw/activity_recognition.msm8953.so
 vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.ssc.so
 
