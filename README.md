@@ -1,4 +1,4 @@
-Copyright (C) 2019 The LineageOS Project
+Copyright (C) 2019-2020 The LineageOS Project
  
   Device configuration for Xiaomi Redmi 7
  =========================================
@@ -28,7 +28,7 @@ budget smartphone from Xiaomi.
  
   ## Device picture
  
-  ![Xiaomi Redmi 7 ](https://mymobile.com.au/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/x/i/xiaomi_redmi_7_32gb_blue_3gb_-_1_1.jpg "Xiaomi Redmi 7")
+  ![Xiaomi Redmi 7 ](https://i.imgur.com/PjaQrqr.png "Xiaomi Redmi 7")
 
 
  
