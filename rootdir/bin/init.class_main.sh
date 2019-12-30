@@ -1,6 +1,6 @@
 #! /vendor/bin/sh
 
-# Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+# Copyright (c) 2013-2014, 2019 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -37,15 +37,10 @@ qcrild_status=true
 
 case "$baseband" in
     "apq" | "sda" | "qcs" )
-    setprop ro.radio.noril yes
+    setprop ro.vendor.radio.noril yes
     stop ril-daemon
     stop vendor.ril-daemon
     stop vendor.qcrild
-esac
-
-case "$baseband" in
-    "msm" | "csfb" | "svlte2a" | "mdm" | "mdm2" | "sglte" | "sglte2" | "dsda2" | "unknown" | "dsda3")
-    start vendor.qmuxd
 esac
 
 case "$baseband" in
@@ -100,8 +95,6 @@ case "$baseband" in
         start vendor.ril-daemon
     fi
 
-    start vendor.ipacm-diag
-    start vendor.ipacm
     case "$baseband" in
         "svlte2a" | "csfb")
           start qmiproxy
@@ -137,25 +130,21 @@ case "$baseband" in
         "tethered")
             start vendor.dataqti
             start vendor.dataadpl
-            start vendor.port-bridge
             ;;
         "concurrent")
             start vendor.dataqti
             start vendor.dataadpl
-            start vendor.netmgrd
-            start vendor.port-bridge
             ;;
         *)
-            start vendor.netmgrd
             ;;
     esac
 esac
 
 #
 # Allow persistent faking of bms
-# User needs to set fake bms charge in persist.bms.fake_batt_capacity
+# User needs to set fake bms charge in persist.vendor.bms.fake_batt_capacity
 #
-fake_batt_capacity=`getprop persist.bms.fake_batt_capacity`
+fake_batt_capacity=`getprop persist.vendor.bms.fake_batt_capacity`
 case "$fake_batt_capacity" in
     "") ;; #Do nothing here
     * )
