@@ -207,6 +207,9 @@ on boot
     chown system system /sys/class/backlight/panel1-backlight/brightness
     chown system system /sys/class/backlight/panel1-backlight/max_brightness
 
+    # Allow access to UFS device attributes on sysfs
+    chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
+
     # Create directory used for display
     # for backward compatibilit
     mkdir /persist/display 0770 system graphics
