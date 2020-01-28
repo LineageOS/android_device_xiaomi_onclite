@@ -167,9 +167,6 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 TARGET_INIT_VENDOR_LIB := libinit_onclite
 TARGET_RECOVERY_DEVICE_MODULES := libinit_onclite
 
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
-
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
