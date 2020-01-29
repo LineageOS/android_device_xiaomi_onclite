@@ -188,6 +188,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.fuse_sdcard=true
 
+# SurfaceFlinger
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays = true \
+    ro.surface_flinger.max_virtual_display_dimension = 4096
+
 # Thermal
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.thermal.data.path=/data/vendor/thermal/
