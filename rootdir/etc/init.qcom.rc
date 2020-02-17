@@ -66,6 +66,7 @@ on early-boot
     write /sys/devices/virtual/cvp/cvp/boot 1
     exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
     exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qti.can.sh
+    setprop ro.sf.lcd_density ${vendor.display.lcd_density}
 
     # for backward compatibility
     chown system system /persist/sensors
@@ -588,9 +589,6 @@ service vendor.msm_irqbal_lb /vendor/bin/msm_irqbalance -f /system/vendor/etc/ms
 on charger
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
-
-on property:vendor.display.lcd_density=*
-    setprop ro.sf.lcd_density ${vendor.display.lcd_density}
 
 service time_daemon /vendor/bin/time_daemon
     class main
