@@ -1,3 +1,14 @@
+# Fingerprint Data files
+/data/vendor/goodix(/.*)?                           u:object_r:fp_data_file:s0
+/data/vendor/fpc(/.*)?                              u:object_r:fp_data_file:s0
+/data/gf_data(/.*)?                                 u:object_r:gf_data_file:s0
+
+# FPC FP
+/sys/devices/platform/soc/soc:fpc1020(/.*)?         u:object_r:sysfs_fpc:s0
+
+# Goodix FP
+/dev/goodix_fp					    u:object_r:goodix_fp_device:s0
+
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.0-service\.widevine         u:object_r:hal_drm_widevine_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service\.clearkey         u:object_r:hal_drm_clearkey_exec:s0

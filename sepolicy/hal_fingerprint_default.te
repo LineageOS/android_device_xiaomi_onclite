@@ -1,0 +1,34 @@
+allow hal_fingerprint_default goodix_fp_device:chr_file {ioctl open read write};
+allow hal_fingerprint_default tee_device:chr_file {ioctl open read write};
+allow hal_fingerprint_default hal_fingerprint_default:netlink_socket {read};
+
+binder_call(hal_fingerprint_default,hal_perf_default);
+allow hal_fingerprint_default hal_perf_hwservice:hwservice_manager find;
+
+allow hal_fingerprint_default mnt_user_file:dir {search};
+allow hal_fingerprint_default mnt_user_file:lnk_file {read};
+
+allow hal_fingerprint_default sysfs_fpc:dir {search};
+allow hal_fingerprint_default sysfs_fpc:file {ioctl open read write};
+allow hal_fingerprint_default tee_device:chr_file {ioctl open read write};
+
+allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
+
+vndbinder_use(hal_fingerprint_default);
+binder_call(hal_fingerprint_default,goodix_fingerprint_vndservice);
+allow hal_fingerprint_default goodix_fingerprint_vndservice:service_manager add;
+
+allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
+
+allow hal_fingerprint_default sdcardfs:dir { search };
+allow hal_fingerprint_default media_rw_data_file:dir { search read open };
+
+allow hal_fingerprint_default gf_data_file:file create_file_perms;
+allow hal_fingerprint_default gf_data_file:dir create_dir_perms;
+
+allow hal_fingerprint_default storage_file:dir { getattr search };
+allow hal_fingerprint_default storage_file:lnk_file { getattr read };
+
+r_dir_file(hal_fingerprint_default, firmware_file)
+
+set_prop(hal_fingerprint_default, fp_prop);
