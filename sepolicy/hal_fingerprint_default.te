@@ -8,7 +8,7 @@ allow hal_fingerprint_default hal_perf_hwservice:hwservice_manager find;
 allow hal_fingerprint_default mnt_user_file:dir {search};
 allow hal_fingerprint_default mnt_user_file:lnk_file {read};
 
-allow hal_fingerprint_default sysfs_fpc:dir {search};
+allow hal_fingerprint_default sysfs_fpc:dir r_dir_perms;
 allow hal_fingerprint_default sysfs_fpc:file {ioctl open read write};
 allow hal_fingerprint_default tee_device:chr_file {ioctl open read write};
 
