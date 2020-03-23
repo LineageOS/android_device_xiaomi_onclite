@@ -6,7 +6,7 @@ type camera_socket, file_type, data_file_type;
 
 # Fiingerprint Data Files
 type fp_data_file, file_type, data_file_type;
-type gf_data_file, file_type, data_file_type;
+type gf_data_file, file_type, data_file_type, core_data_file_type;
 
 # FPC FP
 type sysfs_fpc, sysfs_type, fs_type;
