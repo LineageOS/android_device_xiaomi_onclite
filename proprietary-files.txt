@@ -1323,17 +1323,13 @@ vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
 
-# Latency
-framework/vendor.qti.hardware.data.latency-V1.0-java.jar
-framework/vendor.qti.latency-V2.0-java.jar
-lib/vendor.qti.hardware.data.latency@1.0.so
-lib/vendor.qti.latency@2.0.so
-lib64/vendor.qti.hardware.data.latency@1.0.so
-lib64/vendor.qti.latency@2.0.so
-vendor/lib/vendor.qti.hardware.data.latency@1.0.so
-vendor/lib/vendor.qti.latency@2.0.so
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
-vendor/lib64/vendor.qti.latency@2.0.so
+# Latency - from daisy-user-10-QKQ1.191002.002-V11.0.2.0.QDLMIXM-release-keys
+product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar|c6c5d5bbf50b068df0184aef8551b95daa5f4791
+product/framework/vendor.qti.latency-V2.0-java.jar|d345e24271b83faecdb1abe1361db812fae0646f
+product/lib64/vendor.qti.hardware.data.latency@1.0.so|53794a8d4dfeb0fbd233a4b128749a06d515c3f7
+product/lib64/vendor.qti.latency@2.0.so|0144eec541989f450695ec8cbdd595df4009fe1a
+vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|53794a8d4dfeb0fbd233a4b128749a06d515c3f7
+vendor/lib64/vendor.qti.latency@2.0.so|0144eec541989f450695ec8cbdd595df4009fe1a
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8953.so
