@@ -1481,15 +1481,19 @@ vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
-# Qteeconnector
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/libQTEEConnector_vendor.so
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+# QTEE - from daisy-user-10-QKQ1.191002.002-V11.0.2.0.QDLMIXM-release-keys
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|4d4f6f54c856ccdab0fbdda7a5064b24cf72fcd9
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|f3f5c4216b9a505affbe955a85a56bd39ca1ab74
+vendor/lib/libGPQTEEC_vendor.so|ff57cecc96e32f96564a3b1bb113546eeda045d2
+vendor/lib/libGPTEE_vendor.so|5e817e8ea584fbc02b0098e37f76ccb9d0d2d066
+vendor/lib/libQTEEConnector_vendor.so|dc6380f349dfae6258478b3bf9d329c182e12350
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|aa174ab5a60ba9ade3f90f13ae535e1ecdd9e9ec
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|bc058b17763ed26f882d1042d2012f05022fa8f4
+vendor/lib64/libGPQTEEC_vendor.so|f378e4434df01922c9829406121d77bb3c6afd2c
+vendor/lib64/libGPTEE_vendor.so|0bc88c8e6bbe3b38e5c2229f5dfedf38c0e320d8
+vendor/lib64/libQTEEConnector_vendor.so|68128f4409069546f0dcfabb379e3ec031ce3a36
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|7bc3032b846e896c67dac44f413db78d2acbf99b
 
 # Radio - from daisy-user-10-QKQ1.191002.002-V11.0.2.0.QDLMIXM-release-keys
 -product/app/datastatusnotification/datastatusnotification.apk|272156d88ac5a05f76fcea7f1a31087e1acbcd85
