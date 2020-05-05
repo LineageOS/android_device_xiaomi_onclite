@@ -1435,11 +1435,11 @@ vendor/lib64/libqmi_common_so.so|67dfe570b9063aadb8ae39543c0ad8e34f2c89c1
 vendor/lib64/libqmi_csi.so|679da4f1faac703d29fc0875cfd61c8a97d30a33
 vendor/lib64/libqmi_encdec.so|be78c960990258d4f2db25d9c9727740fe20a2b0
 
-# Qdutils
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+# Qdutils - from daisy-user-10-QKQ1.191002.002-V11.0.2.0.QDLMIXM-release-keys
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|a25c2cc8a0498b8f3a08770b97e49b5545868eca
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8ac0a0fb010f92bfa7de5981d643cf
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|8e1608876dcdd4925999e0f4f34603f53c201fd1
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|e28476fe7646ba4467cf4c8ff6417135bc1421c7
 
 # QTEE - from daisy-user-10-QKQ1.191002.002-V11.0.2.0.QDLMIXM-release-keys
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|4d4f6f54c856ccdab0fbdda7a5064b24cf72fcd9
