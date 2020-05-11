@@ -1017,13 +1017,13 @@ vendor/lib64/mediadrm/libwvdrmengine.so|fd53782817acdb28b690af2b9cc9870df1e9ba47
 vendor/etc/qdcm_calib_data_CSOT_otm1901a_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_boe_hx8394f_video_mode_dsi_panel.xml
 
-# ESE-Powermanager
-vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
-vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc
-vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so
-vendor/lib/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
+# ESE-Powermanager - from daisy-user-10-QKQ1.191002.002-V11.0.2.0.QDLMIXM-release-keys
+vendor/bin/hw/vendor.qti.esepowermanager@1.0-service|13a4b84845fafa35539ed5880c8ff311d12ed2f2
+vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc|58a3866ad5a7613d9392c9adb671eaa7825578a2
+vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so|0eea86e1ddf627b29dbd5ab31bcf64c494cc45dd
+vendor/lib/vendor.qti.esepowermanager@1.0.so|07b5def050ef3200ed8946bf33be4f60049cd4aa
+vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so|c96a5e5fad2c656a991b42b1a6354c4b654810fc
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|165a6b6f6fec38055a178d2d5903de5756a44571
 
 # FM
 lib/fm_helium.so
