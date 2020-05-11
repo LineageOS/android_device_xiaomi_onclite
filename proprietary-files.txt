@@ -1608,18 +1608,15 @@ vendor/lib64/libsensor_reg.so
 vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.ssc.so
 
-# Soter
--app/SoterService/SoterService.apk
-framework/vendor.qti.hardware.soter-V1.0-java.jar
-lib64/vendor.qti.hardware.soter@1.0.so
-vendor/bin/SoterProvisioningTool
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
-vendor/bin/vendor.qti.hardware.soter@1.0-provision
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib/vendor.qti.hardware.soter@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
+# Soter - from daisy-user-10-QKQ1.191002.002-V11.0.2.0.QDLMIXM-release-keys
+product/framework/vendor.qti.hardware.soter-V1.0-java.jar|e0a20a638cac4e369a29157ea4aa44b1e5d60f8f
+product/lib64/vendor.qti.hardware.soter@1.0.so|0cc653294e81fd394ccd9dcb368de6bfa0914619
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|08186e8d917f30292ef6105eaa080776c6501d03
+vendor/bin/SoterProvisioningTool|3d8df6f2db064839efdd49ce54d46f3d534b20f8
+vendor/bin/vendor.qti.hardware.soter@1.0-provision|d0fcbb0774007e9cc74409e12169da2a58739dd1
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1c00fa1fa795fcceba9c11a449f9bcc1d2e53a11
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|0cc653294e81fd394ccd9dcb368de6bfa0914619
 
 # TUI - from daisy-user-10-QKQ1.191002.002-V11.0.2.0.QDLMIXM-release-keys
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|05c0a47f24e38b14fc7c1ccfa64c585692277ee5
