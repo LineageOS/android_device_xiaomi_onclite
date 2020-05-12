@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
-    Copyright (c) 2015-2016, The Linux Foundation. All rights reserved.
+    Copyright (c) 2015-2016, 2020 The Linux Foundation. All rights reserved.
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -268,6 +268,15 @@
     <ctl name="IIR1 Enable Band4" value="0" />
     <ctl name="IIR1 Enable Band5" value="0" />
     <!-- IIR -->
+
+    <!-- VoIP over audio -->
+    <ctl name="MultiMedia10 Mixer TERT_MI2S_TX" value="0" />
+    <ctl name="MultiMedia10 Mixer INTERNAL_BT_SCO_TX" value="0" />
+    <ctl name="MultiMedia10 Mixer AFE_PCM_TX" value="0" />
+    <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia10" value="0" />
+    <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia10" value="0" />
+    <ctl name="AFE_PCM_RX Audio Mixer MultiMedia10" value="0" />
+    <!-- VoIP over audio -->
 
     <!-- ADSP testfwk -->
     <ctl name="MI2S_DL_HL Switch" value="0" />
@@ -1332,7 +1341,39 @@
         <ctl name="SpkrMono WSA_RDAC" value="Switch" />
    </path>
 
-   <path name="spkr-rx-calib">
+    <!-- VoIP Rx settings -->
+    <path name="audio-playback-voip">
+        <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia10" value="1" />
+    </path>
+
+    <path name="audio-playback-voip headphones">
+        <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia10" value="1" />
+    </path>
+
+    <path name="audio-playback-voip bt-sco">
+        <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia10" value="1" />
+    </path>
+
+    <path name="audio-playback-voip bt-sco-wb">
+        <ctl name="BT SampleRate" value="KHZ_16" />
+        <path name="audio-playback-voip bt-sco" />
+    </path>
+
+    <!-- VoIP Tx settings -->
+    <path name="audio-record-voip">
+        <ctl name="MultiMedia10 Mixer TERT_MI2S_TX" value="1" />
+    </path>
+
+    <path name="audio-record-voip bt-sco">
+        <ctl name="MultiMedia10 Mixer INTERNAL_BT_SCO_TX" value="1" />
+    </path>
+
+    <path name="audio-record-voip bt-sco-wb">
+        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
+        <path name="audio-record-voip bt-sco" />
+    </path>
+
+    <path name="spkr-rx-calib">
         <ctl name="PRI_MI2S_RX_DL_HL Switch"  value="1" />
     </path>
 
