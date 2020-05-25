@@ -6,6 +6,11 @@ audio.offload.video=true
 ro.af.client_heap_size_kbyte=7168
 
 # Bluetooth
+persist.bluetooth.a2dp_offload.disabled=false
+persist.vendor.bt.a2dp.aac_whitelist=false
+ro.bluetooth.a2dp_offload.supported=true
+ro.bluetooth.library_name=libbluetooth_qti.so
+vendor.audio.feature.a2dp_offload.enable=true
 vendor.bluetooth.soc=pronto
 
 # Camera
