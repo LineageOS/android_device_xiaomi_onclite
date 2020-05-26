@@ -129,10 +129,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/config
 
+# Keystore
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore_desede=true
+
 # Location
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.location.osnlp.package=com.google.android.gms \
-    ro.location.osnlp.region.package=
+    ro.location.osnlp.region.package= \
+    persist.backup.ntpServer=0.pool.ntp.org
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -221,23 +226,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Misc
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.ssr.restart_level=ALL_ENABLE \
-    sys.vendor.shutdown.waittime=500 \
-    persist.sys.df.extcolor.proc=0 \
-    persist.sys.job_delay=true \
-    persist.sys.sar.dsi=7 \
-    persist.vendor.qcomsysd.enabled=1 \
-    persist.vendor.qg.log_level=1 \
-    ro.colorpick_adjust=true \
-    ro.hardware.keystore_desede=true \
-    ro.logd.size=1M \
-    ro.vendor.df.effect.conflict=1 \
-    sys.boe_hx8394f_length=35 \
-    sys.boe_hx8394f_offset=11 \
-    sys.paper_mode_max_level=32 \
-    sys.truly_otm1901a_length=42 \
-    sys.truly_otm1901a_offset=1 \
-    ro.hardware.nfc_nci=nqx.default \
-    persist.backup.ntpServer=0.pool.ntp.org \
     ro.emmc_size=16GB \
     ro.cutoff_voltage_mv=3400
