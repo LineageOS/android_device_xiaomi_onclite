@@ -80,3 +80,6 @@ ro.ril.disable.power.collapse=0
 
 # WFD
 persist.debug.wfd.enable=0
+
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
