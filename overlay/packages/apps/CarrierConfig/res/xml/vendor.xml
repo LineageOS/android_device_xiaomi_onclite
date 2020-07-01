@@ -1393,7 +1393,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="support_cancel_modify_call" value="true" />
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="config_hide_vt_callforward_option" value="true" />
-        <boolean name="disable_filter_out_conference_host" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
         <boolean name="ignore_reset_ut_capability_bool" value="true" />
         <boolean name="carrier_parse_number_on_forward_call_bool" value="true" />
@@ -1472,7 +1471,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="support_cancel_modify_call" value="true" />
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="config_hide_vt_callforward_option" value="true" />
-        <boolean name="disable_filter_out_conference_host" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
         <boolean name="ignore_reset_ut_capability_bool" value="true" />
         <boolean name="carrier_parse_number_on_forward_call_bool" value="true" />
@@ -1613,7 +1611,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="support_cancel_modify_call" value="true" />
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="config_hide_vt_callforward_option" value="true" />
-        <boolean name="disable_filter_out_conference_host" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
         <boolean name="ignore_reset_ut_capability_bool" value="true" />
         <boolean name="carrier_parse_number_on_forward_call_bool" value="true" />
@@ -1661,7 +1658,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="support_cancel_modify_call" value="true" />
         <boolean name="config_enable_video_crbt" value="true" />
         <boolean name="config_hide_vt_callforward_option" value="true" />
-        <boolean name="disable_filter_out_conference_host" value="true" />
         <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
         <boolean name="ignore_reset_ut_capability_bool" value="true" />
         <boolean name="carrier_parse_number_on_forward_call_bool" value="true" />
