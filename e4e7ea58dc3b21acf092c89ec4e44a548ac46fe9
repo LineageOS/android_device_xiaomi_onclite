@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "40767912_a1b2d64c",
+        "filename": "init/init_onclite.cpp",
+        "patchSetId": 4
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-07-04T18:24:45Z",
+      "side": 1,
+      "message": "please no.",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 18
+      },
+      "revId": "e4e7ea58dc3b21acf092c89ec4e44a548ac46fe9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
