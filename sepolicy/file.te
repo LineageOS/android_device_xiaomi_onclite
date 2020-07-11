@@ -21,6 +21,3 @@ type rild_file, file_type, vendor_file_type;
 # Rmt
 type debugfs_rmt, debugfs_type, fs_type;
 
-# Touchscreen
-type proc_touchpanel, fs_type, sysfs_type, proc_type;
-
