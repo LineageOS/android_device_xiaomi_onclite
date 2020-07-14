@@ -537,6 +537,15 @@ service vendor.move_wifi_data /system/bin/move_wifi_data.sh
     disabled
     oneshot
 
+service cnss-daemon /vendor/bin/cnss-daemon -n -l
+    class late_start
+    user system
+    group system inet net_admin wifi
+    capabilities NET_ADMIN
+
+on property:sys.shutdown.requested=*
+    stop cnss-daemon
+
 service loc_launcher /system/vendor/bin/loc_launcher
     class late_start
     user gps
