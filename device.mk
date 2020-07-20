@@ -331,6 +331,7 @@ PRODUCT_PACKAGES += \
 
 # QTI
 PRODUCT_PACKAGES += \
+    libvndfwk_detect_jni.qti.vendor \
     libqti_vndfwk_detect.vendor
 
 # Ramdisk
