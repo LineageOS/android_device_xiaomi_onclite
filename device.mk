@@ -128,6 +128,13 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     Snap
 
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapminfree=4m \
+    dalvik.vm.heapstartsize=16m
+
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
