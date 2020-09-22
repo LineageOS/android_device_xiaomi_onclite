@@ -370,7 +370,8 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    camera.msm8953_shim
+    camera.msm8953_shim \
+    libshim_dpmframework
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
