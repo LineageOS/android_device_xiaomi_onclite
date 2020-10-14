@@ -38,6 +38,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements
 
     private MainSwitchPreference mSwitchBar;
 
+    private SwitchPreference mWakeOnGesturePreference;
     private SwitchPreference mPickUpPreference;
     private SwitchPreference mHandwavePreference;
     private SwitchPreference mPocketPreference;
@@ -53,6 +54,10 @@ public class DozeSettingsFragment extends PreferenceFragment implements
         }
 
         boolean dozeEnabled = DozeUtils.isDozeEnabled(getActivity());
+
+        mWakeOnGesturePreference = (SwitchPreference) findPreference(DozeUtils.WAKE_ON_GESTURE_KEY);
+        mWakeOnGesturePreference.setEnabled(dozeEnabled);
+        mWakeOnGesturePreference.setOnPreferenceChangeListener(this);
 
         PreferenceCategory proximitySensorCategory =
                 (PreferenceCategory) getPreferenceScreen().findPreference(DozeUtils.CATEG_PROX_SENSOR);
@@ -89,6 +94,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements
 
         mSwitchBar.setChecked(isChecked);
 
+        mWakeOnGesturePreference.setEnabled(isChecked);
         mPickUpPreference.setEnabled(isChecked);
         mHandwavePreference.setEnabled(isChecked);
         mPocketPreference.setEnabled(isChecked);
