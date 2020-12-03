@@ -129,6 +129,10 @@ PRODUCT_PACKAGES += \
     libstdc++_vendor \
     vendor.qti.hardware.camera.device@1.0
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=4m \
