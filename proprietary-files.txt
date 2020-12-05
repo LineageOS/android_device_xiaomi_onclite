@@ -2114,7 +2114,6 @@ vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 
 # GPS - from daisy-user-10-QKQ1.191002.002-V11.0.10.0.QDLMIXM-release-keys
--vendor/app/CACertService/CACertService.apk|69e2e74add9fd8a8110812042408700bcb7a0852
 vendor/bin/garden_app|f0a1f082c2abaf0ffda363e52361587f1c8a7492
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti|7f7006829005658c9b89c61ac02f107d3d6fe470
 vendor/bin/loc_launcher|06793983f836a9b42b5ff3848f8fe177134c1379
@@ -2130,7 +2129,6 @@ vendor/etc/init/android.hardware.gnss@2.0-service-qti.rc|8e0b0596a13b8d653e6f541
 vendor/lib64/hw/android.hardware.gnss@2.0-impl-qti.so|02717939c65794f29ab10bb8175081dbcfde0327
 vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so|2328835a0e0221a527c8e55c72e1a0dcef3fcfbe
 vendor/lib64/libbatching.so|d46350976bb1d3dfd1e9d354c176290eb1284a42
-vendor/lib64/libcacertclient.so|daa1332db3b07eb75350dee833628bd248d9f03e
 vendor/lib64/libdataitems.so|0ff60a5f4273cc3eb9f1f8a4d7bd204107375cec
 vendor/lib64/libgdtap.so|f5151c6425312d37c1eeb78cce1f92b71ae79e10
 vendor/lib64/libgeofencing.so|57f23c8de2503824e9b05e9c49fae2aecf3f7e9d
@@ -2158,8 +2156,6 @@ vendor/lib64/vendor.qti.gnss@2.0.so|f6f94bf22b8948c163b84cf092d86fdd25b39850
 vendor/lib64/vendor.qti.gnss@2.1.so|7f69b6098f779f6ed396bbf366b496b0b228c743
 vendor/lib64/vendor.qti.gnss@3.0-service.so|6b3c387f31f4cb91c8907362af4daa3f0cad7911
 vendor/lib64/vendor.qti.gnss@3.0.so|c5ed668d324e7c898ca026fc12dad8829cd8a944
-vendor/lib64/vendor.qti.hardware.cacert@1.0.so|bb56f65d5251057a306a8175daef9571cfd3457b
-vendor/lib/libcacertclient.so|120cce70d1a589b76fff76a3d8c0bc4f4a2e31f2
 vendor/lib/libjnihelper.so|78a8dd816959955b699c0273b9f528b1aecc2e93
 vendor/lib/vendor.qti.gnss@1.0.so|2fbfffb280becb4c890787958d5471c887e0e29e
 vendor/lib/vendor.qti.gnss@1.1.so|3f185bf7c146a8f77fe6c35d57358e7c64b15ac2
@@ -2167,7 +2163,6 @@ vendor/lib/vendor.qti.gnss@1.2.so|020509617283c8323c71c1eec955b7a09d62aa89
 vendor/lib/vendor.qti.gnss@2.0.so|ef5e1e3718cd71a01a4ca7b06f38d56b6aca50aa
 vendor/lib/vendor.qti.gnss@2.1.so|c7eeb37d061f7978624810ccc1d1d7f25e9f95da
 vendor/lib/vendor.qti.gnss@3.0.so|e4f5a7fd2dcdf56f8d69e4d0b27e996812ebd295
-vendor/lib/vendor.qti.hardware.cacert@1.0.so|89d3c343fcad39b2c88a3255866cfd833783caea
 
 # Gatekeeper - from daisy-user-10-QKQ1.191002.002-V11.0.10.0.QDLMIXM-release-keys
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|bea6d682011b465a08b9085f7b5e69b965743eee
