@@ -1600,12 +1600,14 @@ vendor/lib/hw/activity_recognition.msm8953.so|60ed5922a2d73f1cda71f7da8dbb702f5d
 vendor/lib/libsensor1.so|432973997776d0d7a88670a9c5d6ac2e44c7903d
 vendor/lib/libsensor_reg.so|ba59e280ae94d491f1f6c19b4e33f477d0bb50c2
 vendor/lib/sensor_calibrate.so|59c6e85c77464209885cfd459e6d780456c861f9
-vendor/lib/sensors.ssc.so|3e8c49cde6e3dffacf1b5e163ff8a158ca7897d8
 vendor/lib64/hw/activity_recognition.msm8953.so|fe295d5a9a8d9aad9f132c2ee40b592e7db68046
 vendor/lib64/libsensor1.so|70255bec42ac093d4c5dc24411843f21e045bcec
 vendor/lib64/libsensor_reg.so|3539a0e7888aa187e3d2bbdd357ff183ae6dfdf3
 vendor/lib64/sensor_calibrate.so|03fefe93d634573f333efc2674dfede9bd0e1867
-vendor/lib64/sensors.ssc.so|db03172dc49188e50eb88f4cf9c43d762cb118a9
+
+# Sensor - from daisy-user-10-QKQ1.191002.002-V11.0.10.0.QDLMIXM-release-keys
+vendor/lib/sensors.ssc.so|302e5aee38e1296dfba32b681681492d5070f509
+vendor/lib64/sensors.ssc.so|9affbc5130223a63c7c8ee33a1b7408d739e1466
 
 # Soter - from daisy-user-10-QKQ1.191002.002-V11.0.10.0.QDLMIXM-release-keys
 product/framework/vendor.qti.hardware.soter-V1.0-java.jar|e0a20a638cac4e369a29157ea4aa44b1e5d60f8f
