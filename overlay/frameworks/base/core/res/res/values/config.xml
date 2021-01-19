@@ -298,6 +298,7 @@
 
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
+        <item>/system/bin/surfaceflinger</item>
         <item>/system/framework/arm64/boot-framework.oat</item>
         <item>/system/framework/framework.jar</item>
         <item>/system/framework/oat/arm64/services.odex"</item>
@@ -309,7 +310,6 @@
         <item>/system/lib64/libRSDriver.so</item>
         <item>/system/lib64/libRSCpuRef.so</item>
         <item>/system/lib64/libblas.so</item>
-        <item>/system/lib64/libsurfaceflinger.so</item>
         <item>/apex/com.android.art/javalib/core-oj.jar</item>
         <item>/apex/com.android.art/javalib/core-libart.jar</item>
         <item>/apex/com.android.media/javalib/updatable-media.jar</item>
