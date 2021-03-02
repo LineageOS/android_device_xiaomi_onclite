@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "90ff3727_8fb3ebd2",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2021-03-02T14:14:06Z",
+      "side": 0,
+      "message": "needed. https://github.com/LineageOS/android_hardware_qcom_wlan/blob/bb71c38d4be7a4ab951ba0164ba3ede003648ad1/wcnss-service/Android.mk#L7",
+      "revId": "16d511b6a81cb2c4510acbbc255024c9467be6d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
