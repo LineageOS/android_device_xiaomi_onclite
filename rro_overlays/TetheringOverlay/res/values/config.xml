@@ -14,20 +14,6 @@
      limitations under the License.
 -->
 <resources>
-    <!--
-    OEMs that wish to change the below settings must do so via a runtime resource overlay package
-    and *NOT* by changing this file. This file is part of the tethering mainline module.
-    TODO: define two resources for each config item: a default_* resource and a config_* resource,
-    config_* is empty by default but may be overridden by RROs.
-    -->
-    <!-- List of regexpressions describing the interface (if any) that represent tetherable
-         USB interfaces.  If the device doesn't want to support tethering over USB this should
-         be empty.  An example would be "usb.*" -->
-    <string-array translatable="false" name="config_tether_usb_regexs">
-        <item>"usb\\d"</item>
-        <item>"rndis\\d"</item>
-    </string-array>
-
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          Wifi interfaces.  If the device doesn't want to support tethering over Wifi this
          should be empty.  An example would be "softap.*" -->
@@ -42,12 +28,4 @@
         <item>bnep\\d</item>
         <item>bt-pan</item>
     </string-array>
-
-    <!-- When true, the tethering upstream network follows the current default
-         Internet network (except when the current default network is mobile,
-         in which case a DUN network will be used if required).
-         When true, overrides the config_tether_upstream_types setting above.
-    -->
-    <bool translatable="false" name="config_tether_upstream_automatic">true</bool>
-
 </resources>
