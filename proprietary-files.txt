@@ -962,14 +962,6 @@ vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 # Charger
 vendor/bin/hvdcp_opti
 
-# Configstore - from daisy-user-10-QKQ1.191002.002-V11.0.10.0.QDLMIXM-release-keys
-vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|f22cff271d79c7362facbf607405b69a37d423e3
-vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|14d949d0291c97375f536d40d0490b04cee3fa9f
-vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so|3b2e731f58932600b6483108c12a91336a72cc86
-vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|422cd02753b966121a19a7d258248d46f82f887b
-vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so|1fc3edceb53846c7908fdb963649cdcac83d810d
-
 # Consumerir
 vendor/bin/consumerird
 vendor/lib/hw/consumerir.default.so
