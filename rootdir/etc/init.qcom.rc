@@ -249,9 +249,6 @@ on post-fs-data
     #Create folder of camera
     mkdir /data/vendor/camera 0770 camera camera
 
-    #Create folder for mm-qcamera-daemon
-    mkdir /data/misc/camera 0770 camera camera
-
     #Create directory for tftp
     mkdir /data/vendor/tombstones 0771 system system
     mkdir /data/vendor/tombstones/rfs 0771 system system
