@@ -160,8 +160,8 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.9
 
 # Doze mode
-PRODUCT_PACKAGES += \
-    XiaomiDoze
+#PRODUCT_PACKAGES += \
+#    XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
