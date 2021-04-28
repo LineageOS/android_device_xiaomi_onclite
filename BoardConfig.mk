@@ -58,6 +58,13 @@ BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_VERSION := 4.9
 
+# Kernel -  prebuilt
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := device/xiaomi/onclite-kernel/Image.gz-dtb
+BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/onclite-kernel/dtbo.img
+BOARD_VENDOR_KERNEL_MODULES += \
+    $(wildcard device/xiaomi/onclite-kernel/vendor/lib/modules/*.ko)
+
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
