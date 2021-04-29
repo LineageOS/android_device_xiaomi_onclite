@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (c) 2019 Qualcomm Technologies, Inc.
+  ~ Copyright (c) 2020 Qualcomm Technologies, Inc.
   ~ All Rights Reserved.
   ~ Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -35,14 +35,17 @@ It allows additional grants on top of privapp-permissions-platform.xml
 
 <permissions>
 
-    <privapp-permissions package="com.qualcomm.qcrilmsgtunnel">
-        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
-    </privapp-permissions>
-
     <privapp-permissions package="org.codeaurora.ims">
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
         <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
         <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.qualcomm.qcrilmsgtunnel">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
     </privapp-permissions>
 
 </permissions>
