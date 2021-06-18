@@ -75,14 +75,14 @@ service vendor.per_mgr /vendor/bin/pm-service
     user system
     group system
     ioprio rt 4
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.per_proxy /vendor/bin/pm-proxy
     class core
     user system
     group system
     disabled
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
@@ -94,7 +94,7 @@ service vendor.qseecomd /vendor/bin/qseecomd
    class core
    user root
    group root
-   writepid /dev/cpuset/system-background/tasks
+   task_profiles ServiceCapacityLow
 
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
@@ -104,7 +104,7 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-recv-passive-client stream 0666 system system
    socket thermal-send-rule stream 0660 system system
    group root
-   writepid /dev/cpuset/system-background/tasks
+   task_profiles ServiceCapacityLow
 
 service adsprpcd /system/vendor/bin/adsprpcd
    class main
