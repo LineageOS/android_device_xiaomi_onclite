@@ -81,6 +81,29 @@ void load_props(string device, string model) {
     }
 }
 
+/* From Magisk@jni/magiskhide/hide_policy.cpp */
+static const char *prop_key[] =
+        { "ro.boot.vbmeta.device_state", "ro.boot.verifiedbootstate", "ro.boot.flash.locked",
+          "ro.boot.veritymode", "ro.boot.warranty_bit", "ro.warranty_bit",
+          "ro.debuggable", "ro.secure", "ro.build.type", "ro.build.tags",
+          "ro.vendor.boot.warranty_bit", "ro.vendor.warranty_bit",
+          "vendor.boot.vbmeta.device_state", "vendor.boot.verifiedbootstate", nullptr };
+
+static const char *prop_val[] =
+        { "locked", "green", "1",
+          "enforcing", "0", "0",
+          "0", "1", "user", "release-keys",
+          "0", "0",
+          "locked", "green", nullptr };
+
+static void workaround_properties() {
+
+    // Hide all sensitive props
+    for (int i = 0; prop_key[i]; ++i) {
+        property_override(prop_key[i], prop_val[i], false);
+    }
+}
+
 void check_device()
 {
     struct sysinfo sys;
@@ -149,5 +172,6 @@ void vendor_load_properties()
         load_props("onclite", "Redmi 7");
     else
         load_props("onc", "Redmi Y3");
+    workaround_properties();
 
 }
