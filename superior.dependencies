@@ -1,6 +1,18 @@
 [
- {
-   "repository": "android_kernel_xiaomi_onclite",
-   "target_path": "kernel/xiaomi/onclite"
- }
+  {
+    "remote": "lineage",
+    "repository": "android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch": "lineage-18.1"
+  },
+  {
+    "repository": "android_kernel_xiaomi_onclite",
+    "target_path": "kernel/xiaomi/onclite"
+    "branch": "eleven"
+  },
+  {
+    "repository": "vendor_xiaomi_onclite",
+    "target_path": "vendor/xiaomi/onclite",
+    "branch": "eleven"
+  },
 ]
