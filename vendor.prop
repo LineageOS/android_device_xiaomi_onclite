@@ -23,6 +23,10 @@ vendor.voice.voip.conc.disabled=true
 # Bluetooth
 vendor.qcom.bluetooth.soc=pronto
 
+# Chipset
+ro.soc.manufacturer=QTI
+ro.soc.model=SDM450
+
 # Display post-processing
 ro.vendor.display.cabl=0
 ro.vendor.display.sensortype=2
