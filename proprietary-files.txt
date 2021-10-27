@@ -1421,7 +1421,6 @@ vendor/lib64/libQTEEConnector_vendor.so|68128f4409069546f0dcfabb379e3ec031ce3a36
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|7bc3032b846e896c67dac44f413db78d2acbf99b
 
 # Radio - from FP3-user 11 8901.4.A.0010 gms-f74c58a8 release-keys
--system_ext/app/datastatusnotification/datastatusnotification.apk|3138e53ebae84a99eacdc5846b5b49fae00b6d7d
 -system_ext/app/embms/embms.apk|09134a1bd2d67e55caf81af08ac44f02abd55d18
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|fb276d576e5775bfdeed30b4a87f8c1b1e95a7f0
 system_ext/etc/permissions/embms.xml|22e7474091f9f71f02dd0cfc76cfa8848a46f079
