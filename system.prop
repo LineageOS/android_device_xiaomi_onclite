@@ -29,7 +29,6 @@ ro.vendor.use_data_netmgrd=true
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=0
-debug.sf.latch_unsignaled=1
 persist.demo.hdmirotationlock=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_virtual_display_dimension=4096
