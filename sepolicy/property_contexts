@@ -5,7 +5,7 @@ camera.dual.mode           u:object_r:camera_prop:s0
 persist.camera.            u:object_r:camera_prop:s0
 
 # Fingerprint
-sys.fp.goodix		   u:object_r:fp_prop:s0
-sys.fp.vendor	           u:object_r:fp_prop:s0
-persist.sys.fp.            u:object_r:fp_prop:s0
-persist.vendor.sys.fp.     u:object_r:fp_prop:s0
+sys.fp.goodix              u:object_r:vendor_fp_prop:s0
+sys.fp.vendor              u:object_r:vendor_fp_prop:s0
+persist.sys.fp.            u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.     u:object_r:vendor_fp_prop:s0
