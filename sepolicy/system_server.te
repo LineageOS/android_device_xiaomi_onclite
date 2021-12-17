@@ -5,4 +5,4 @@ r_dir_file(system_server, idc_file);
 r_dir_file(system_server, keylayout_file);
 
 # Fingerprint
-get_prop(system_server, fp_prop);
+get_prop(system_server, vendor_fp_prop);
