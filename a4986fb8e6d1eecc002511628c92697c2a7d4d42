@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7dda3cbf_38d57bf4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2022-04-10T18:04:46Z",
+      "side": 1,
+      "message": "It fixes some log spam of permission issue. but still without this, PowerOffAlarm works.\nLet the spam for now.",
+      "revId": "a4986fb8e6d1eecc002511628c92697c2a7d4d42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
