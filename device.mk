@@ -223,6 +223,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
+# IFAA manager
+PRODUCT_PACKAGES += \
+    IFAAService
+
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
@@ -385,6 +389,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.msm8953_shim \
     libshim_dpmframework
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/xiaomi
 
 # Trust HAL
 PRODUCT_PACKAGES += \
