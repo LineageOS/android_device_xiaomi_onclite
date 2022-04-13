@@ -225,9 +225,7 @@ PRODUCT_PACKAGES += \
 
 # IFAA manager
 PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
+    IFAAService
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -391,6 +389,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.msm8953_shim \
     libshim_dpmframework
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/xiaomi
 
 # Trust HAL
 PRODUCT_PACKAGES += \
