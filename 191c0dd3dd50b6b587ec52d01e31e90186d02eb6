@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1a25a3a_227ce406",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-07-03T11:36:56Z",
+      "side": 1,
+      "message": "Don\u0027t pick the previous impl just to nuke it after this, only pick this",
+      "revId": "191c0dd3dd50b6b587ec52d01e31e90186d02eb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
