@@ -36,6 +36,8 @@ public final class DozeUtils {
 
     private static final String DOZE_INTENT = "com.android.systemui.doze.pulse";
 
+    protected static final String DOZE_ENABLE = "doze_enable";
+
     protected static final String WAKE_ON_GESTURE_KEY = "wake_on_gesture";
     protected static final String CATEG_PROX_SENSOR = "proximity_sensor";
 

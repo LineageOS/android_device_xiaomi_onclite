@@ -58,6 +58,10 @@ public class DozeSettingsFragment extends PreferenceFragment implements
 
         boolean dozeEnabled = DozeUtils.isDozeEnabled(getActivity());
 
+        mSwitchBar = (MainSwitchPreference) findPreference(DozeUtils.DOZE_ENABLE);
+        mSwitchBar.addOnSwitchChangeListener(this);
+        mSwitchBar.setChecked(dozeEnabled);
+
         mWakeOnGesturePreference = (SwitchPreference) findPreference(DozeUtils.WAKE_ON_GESTURE_KEY);
         mWakeOnGesturePreference.setEnabled(dozeEnabled);
         mWakeOnGesturePreference.setOnPreferenceChangeListener(this);
