@@ -1288,6 +1288,15 @@ vendor/lib64/libOmxWmaDec.so|32e1b9c72d0b0a8b74978e1687b701e18030d68a
 -vendor/lib64/libgpustats.so|a899ae72983277442cdacf8f43271986c91ce710
 vendor/lib64/libmm-color-convertor.so|d3539eb5a6a986f8ba81bac9cbf7b34872b12f1a
 
+# Mlipay - from onc-user-10-QKQ1.191008.001-V12.5.1.0.QFLCNXM-release-keys
+vendor/bin/mlipayd@1.1|113f40627bd2376fc6aed95a629eeaf9bd60fd34
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
+vendor/lib64/libmlipay.so|19a15ee327d5a8877586dc65b813906ee0b124ee
+vendor/lib64/libmlipay@1.1.so|6cbdbaeb3f4ddde517a64a0be11bc4bd69bb7cb0
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|145add538e35eb26a88ad58bb0b63a1bb1df2d02
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|aa98dbb650cf910184e0f4b7c9a6c43a05cc65f4
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so|82543b53c4391a31d80ea8eeefa4b96bd9dd711e
+
 # Perf - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
 vendor/bin/energy-awareness|def07e366347c7f0a7778b748acb49557ab21d2a
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service|07b1b78015ee6d8d12ae38a5c7a3253567ee97e8
@@ -1609,15 +1618,12 @@ vendor/lib64/sensor_calibrate.so|03fefe93d634573f333efc2674dfede9bd0e1867
 vendor/lib/sensors.ssc.so|302e5aee38e1296dfba32b681681492d5070f509
 vendor/lib64/sensors.ssc.so|9affbc5130223a63c7c8ee33a1b7408d739e1466
 
-# Soter - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
-product/framework/vendor.qti.hardware.soter-V1.0-java.jar|e0a20a638cac4e369a29157ea4aa44b1e5d60f8f
-product/lib64/vendor.qti.hardware.soter@1.0.so|0cc653294e81fd394ccd9dcb368de6bfa0914619
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|08186e8d917f30292ef6105eaa080776c6501d03
-vendor/bin/SoterProvisioningTool|3d8df6f2db064839efdd49ce54d46f3d534b20f8
-vendor/bin/vendor.qti.hardware.soter@1.0-provision|d0fcbb0774007e9cc74409e12169da2a58739dd1
+# Soter - from onc-user-10-QKQ1.191008.001-V12.5.1.0.QFLCNXM-release-keys
+-vendor/app/SoterService/SoterService.apk|a906b956cff77c2a1bcb26d8a74ecd386b50eeb2
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|40eba287faa15ed67cc389b56f0595699d202666
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1c00fa1fa795fcceba9c11a449f9bcc1d2e53a11
-vendor/lib64/vendor.qti.hardware.soter@1.0.so|0cc653294e81fd394ccd9dcb368de6bfa0914619
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|011245d9368c2ab824d9cf09b802bf7739c39bb8
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|5009b4dc1e8469186530f44bd5f184a7a8f51266
 
 # TUI - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|05c0a47f24e38b14fc7c1ccfa64c585692277ee5
