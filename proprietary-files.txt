@@ -1288,11 +1288,11 @@ vendor/lib64/libqti-perfd-client.so|754fc2b05a5c81825108cfcdfc036156216592a9
 vendor/lib64/libqti-perfd.so|f252bc957f45dd389463abe97be3f0f129da8b67
 vendor/lib64/libqti-util.so|e790b62bb198442145fcba20c2dc61d182c45a47
 
-# Peripheral manager - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
-vendor/bin/pm-proxy|1f216a6f54e9b97c026f3f3bc4d7d441d58d90a7
-vendor/bin/pm-service|8a521f14576d0d2edf03b4500a54379d37e15d4e
-vendor/lib/libperipheral_client.so|b75a6adac094ddcd6ded9415cae83e18d1e7e5d0
-vendor/lib64/libperipheral_client.so|20c8ab21fe28e41f60b59af0ba72de9f6b1996d2
+# Peripheral manager - from FP3-user 11 8901.4.A.0010 gms-f74c58a8 release-keys
+vendor/bin/pm-proxy|910437c11108aa66e803bbc760ce3998d141a6b4
+vendor/bin/pm-service|98827a6bf6693033a7c767e3fb4f097b9075a0ef
+vendor/lib/libperipheral_client.so|7ace2f7c8c7ebd986db6c7796de7237e584e658b
+vendor/lib64/libperipheral_client.so|9bfd41e276e16b8f7c6808f3d87531fc5be4cdd5
 
 # Postprocessing - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
 vendor/bin/hw/vendor.display.color@1.0-service|dd461fbbbdc7175b8e1e37eba19bc1c48111b5b6
@@ -1318,41 +1318,44 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|656009a5cc2b3bc52a7706579a192a1f3328f37c
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|78f8db9acff8b3461d6d37c747b1bdb59e547bb5
 
-# QMI - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
-etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
-etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
-vendor/bin/irsc_util|07f4a90a0fb528c5b883a6865184c7d7239e213d
-vendor/lib/libdiag.so|9dbf63722cba2b473429eeac2690e5d7c0bd2754
-vendor/lib/libdsutils.so|acabab426e7db861d9f7381e36bf3534da4d70f0
-vendor/lib/libidl.so|e8aaba37dbfc7f90032a4a4fe534743685e1b540
-vendor/lib/libminksocket.so|b8982fdd1c4b8f64271ed34070e6fa8756ec2f2c
-vendor/lib/libqcci_legacy.so|737a1f513172c0412969bc86b75284b27ff3130c
-vendor/lib/libqdi.so|b258fb4619370706fa189dcc54c4201b4424ab31
-vendor/lib/libqdp.so|1d565054927af2e362ad9962c779b13be1c9df8b
-vendor/lib/libqmi.so|b2376449888974e879fa47a3f07de98ae3c01640
-vendor/lib/libqmiservices.so|19459461424b02b057878ca20ffe15d5bd3b59a1
-vendor/lib/libqmi_cci.so|a921e84ec500f7cfb7fe88a4ffba149581410a44
-vendor/lib/libqmi_client_helper.so|c27e5cacedb9bbeed9f0747afe023714cbb320f4
-vendor/lib/libqmi_client_qmux.so|5ac0b07f554360421013acf02dc367717cb40554
-vendor/lib/libqmi_common_so.so|2ac03346bd5f942a904dcc0ba48a8105a26539e7
-vendor/lib/libqmi_csi.so|eadc82e05ff55f2ccdb548fc54369a19a5641b58
-vendor/lib/libqmi_encdec.so|60effd16d5a3bdc12b8ec02a37becc1b21d509ff
-vendor/lib64/libdiag.so|2d8a922ef946fa59d827e955808e908f40fd7d54
-vendor/lib64/libdsutils.so|8a962926cd4e0ad90522710e415d2a45cd50ae58
-vendor/lib64/libdsi_netctrl.so|3908c889cc97871ec1c8a840a7aca7d57867dc5a
-vendor/lib64/libidl.so|cdc2c5ee20f8d70d42653c0a234a2999787fd683
-vendor/lib64/libminksocket.so|57dd1ef7283ae755d54479b82d410e7b0d3559f9
-vendor/lib64/libqcci_legacy.so|5ff872de76321a9b9d5435747ea16d023836844d
-vendor/lib64/libqdi.so|7acd1a297f33000579d731339142521af50793d2
-vendor/lib64/libqdp.so|b2c5eb15810c2d8f578bb55c9e6f47cf24089f98
-vendor/lib64/libqmi.so|948a862aaefd4c0bf80e91532b64361d4a820d34
-vendor/lib64/libqmiservices.so|f3186660c8eaeb0b1d6b27346defd2f8b34ab37d
-vendor/lib64/libqmi_cci.so|411a074dc765fb263bec50531ce5c408dd72388f
-vendor/lib64/libqmi_client_helper.so|6dac78cb149927e3599530250f72731a3ef95804
-vendor/lib64/libqmi_client_qmux.so|7124bc122f09b324588a8ffd901f9c3c58bdb716
-vendor/lib64/libqmi_common_so.so|67dfe570b9063aadb8ae39543c0ad8e34f2c89c1
-vendor/lib64/libqmi_csi.so|679da4f1faac703d29fc0875cfd61c8a97d30a33
-vendor/lib64/libqmi_encdec.so|be78c960990258d4f2db25d9c9727740fe20a2b0
+# QMI - from FP3-user 11 8901.4.A.0010 gms-f74c58a8 release-keys
+system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
+system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
+vendor/bin/irsc_util|e590882aefe9da28c1d57e9bf46962198f1dabcd
+vendor/lib/libdiag.so|7980d9d4b18ba69fed44626367704d321a4bf432
+vendor/lib/libdsutils.so|60135d6d64ecba72fa0eb637a434578290beaaff
+vendor/lib/libidl.so|dc8d161c035f70e7e6c55461b0238fbe916c5a7d
+vendor/lib/libminkdescriptor.so|a97a85de774b0d6c4537316b960252dd2ebe859f
+vendor/lib/libminksocket.so|234533783b5dfc4353b9eff43c2bbce164de7c12
+vendor/lib/libqcci_legacy.so|fa7f0fe72c0246633d842891bb0187867930f63b
+vendor/lib/libqdi.so|6fbd9d89b27a7f54925a6a174b75dfaab450c59b
+vendor/lib/libqdp.so|9d9058f4761990d09acd5610e281a5cee4bd5e95
+vendor/lib/libqmi.so|08e30ffe119992357de2e8f02b2cd3ea1fed6a50
+vendor/lib/libqmiservices.so|52244e9d54c4d352d148d276044a4b7cc4c78bf4
+vendor/lib/libqmi_cci.so|6b8aae60c097ef8ae18f2497ed803bfdbab4e252
+vendor/lib/libqmi_client_helper.so|8e8184cccc95e0d8b3b95677e69332d5453ac773
+vendor/lib/libqmi_client_qmux.so|c2d7ec0886ff49d14f0b93fd91edb77130311fe4
+vendor/lib/libqmi_common_so.so|487dab3792cd55351cdaf0a0d0e5fb974860f992
+vendor/lib/libqmi_csi.so|90930481c581a6b319bd87b6799b8e0ee882e52c
+vendor/lib/libqmi_encdec.so|e45cfc088efc2141047d304c9577f466bdb5dfbc
+vendor/lib/libqmi_legacy.so|c1d45f9d7e13dba120bf4384953039ee5b95a5b2
+vendor/lib64/libdiag.so|d3f0d4a19b1d00a86369779a439b9a0e7a93f997
+vendor/lib64/libdsutils.so|0b466344eb6628feb1b5aba00d1ef3f680e5aa9a
+vendor/lib64/libidl.so|79ebe1a5b1fb81d9cdc972c71cec2667cdcf6599
+vendor/lib64/libminkdescriptor.so|b63dc4f26964f5a78c5b34415da902e46a70245e
+vendor/lib64/libminksocket.so|103f45603bef0d1fbf52ccdf8458dd31cabe3945
+vendor/lib64/libqcci_legacy.so|d4643c6a585a62d9249acc841a4137c097299e4c
+vendor/lib64/libqdi.so|c9e0b315edfb6a8f6e6afb5370e9dff5e934c78c
+vendor/lib64/libqdp.so|f83527aa6b6aa45c6495056dc830affbe889fb18
+vendor/lib64/libqmi.so|e29aa40904a3b1cf73dd739861154acbbe73ecb3
+vendor/lib64/libqmiservices.so|2e259463cbeb329caec303b642ab4068c8d10be5
+vendor/lib64/libqmi_cci.so|821c9ed22945e020e8f855267d53be5f2b619740
+vendor/lib64/libqmi_client_helper.so|b53191b0ff5bd9abadd3751ef2896ef13e9cd8d2
+vendor/lib64/libqmi_client_qmux.so|600fe6c17ae7a5ca01d02bcbbbf7fb2c0510bd41
+vendor/lib64/libqmi_common_so.so|4a162382e0d611dacbb803371e78eb56786078b9
+vendor/lib64/libqmi_csi.so|6d22ed6353c791ea1804c195b92b02dc28a679c3
+vendor/lib64/libqmi_encdec.so|8a365cf7472c187c02fa0649e09fee529ded7563
+vendor/lib64/libqmi_legacy.so|5dc657620cfaa6b13bd37268459c7247bae58770
 
 # Qdutils - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|a25c2cc8a0498b8f3a08770b97e49b5545868eca
