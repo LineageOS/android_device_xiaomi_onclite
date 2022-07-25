@@ -16,6 +16,24 @@
       "message": "Hey,\nI suggest you not to do this. We will have almost 300 tests in VTS failing. As per QC, Radio 1.5 is only for QSSI devices and newer.\n\nOur modem and radio blobs don\u0027t support 1.5 actually.",
       "revId": "bcd93433e0074e4b6686531ec8ded77c3fb0e644",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12c7f9c0_5ed5d053",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2022-07-25T15:16:30Z",
+      "side": 1,
+      "message": "I haven\u0027t registered it in the manifest. only 1.4 is there. this lib is needed by other blobs.",
+      "parentUuid": "2a3912b5_261f0301",
+      "revId": "bcd93433e0074e4b6686531ec8ded77c3fb0e644",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
