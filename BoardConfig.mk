@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,6 +30,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 TARGET_BOARD_PLATFORM := msm8953
+TARGET_ENFORCES_QSSI := true
 
 TARGET_BOARD_SUFFIX := _64
 
