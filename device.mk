@@ -325,11 +325,9 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.msm.usb.configfs.rc \
     init.onclite.rc \
     init.qcom.rc \
     init.qcom.sh \
-    init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
@@ -387,6 +385,13 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi
 
 # USB HAL
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/usb/etc
+
+PRODUCT_PACKAGES += \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh
+
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.basic
 

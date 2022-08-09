@@ -84,5 +84,10 @@ persist.vendor.radio.start_ota_daemon=1
 persist.vendor.radio.sw_mbn_update=0
 vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
 
+# USB
+vendor.usb.diag.func.name=diag
+vendor.usb.use_ffs_mtp=0
+vendor.usb.use_gadget_hal=0
+
 # Zygote
 zygote.critical_window.minute=10
