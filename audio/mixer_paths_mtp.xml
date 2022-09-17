@@ -30,8 +30,8 @@
 
 <mixer>
     <!-- These are the initial mixer settings -->
-    <ctl name="Speaker Boost" value="DISABLE" />
-    <ctl name="EAR PA Boost" value="DISABLE" />
+    <ctl name="Speaker Boost" value="ENABLE" />
+    <ctl name="EAR PA Boost" value="ENABLE" />
     <ctl name="Voice Rx Device Mute" id="0" value="0" />
     <ctl name="Voice Rx Device Mute" id="1" value="-1" />
     <ctl name="Voice Rx Device Mute" id="2" value="20" />
@@ -90,7 +90,7 @@
     <ctl name="WSA Spk Switch" value="ZERO" />
     <ctl name="SpkrMono WSA_RDAC" value="ZERO" />
     <ctl name="SpkrMono BOOST Switch" value="1" />
-    <ctl name="EAR PA Gain" value="POS_6_DB" />
+    <ctl name="EAR PA Gain" value="POS_8_DB" />
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     <ctl name="EAR PA Boost" value="ENABLE" />
     <ctl name="MI2S_RX Channels" value="One" />
@@ -1360,7 +1360,7 @@
         <ctl name="RX1 MIX1 INP1" value="RX1" />
         <ctl name="RDAC2 MUX" value="RX1" />
         <ctl name="RX1 Digital Volume" value="93" />
-        <ctl name="EAR PA Gain" value="POS_6_DB" />
+        <ctl name="EAR PA Gain" value="POS_8_DB" />
         <ctl name="EAR_S" value="Switch" />
         <ctl name="Ext_Receiver_Amp" value="On" />
     </path>
