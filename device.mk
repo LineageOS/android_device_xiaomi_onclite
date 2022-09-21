@@ -383,7 +383,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    camera.msm8953_shim
+    libui_shim.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
