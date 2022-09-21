@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eaed9043_7e65ad6f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2022-09-21T19:02:40Z",
+      "side": 1,
+      "message": "POS_8_DB is not a valid EAR PA gain value.\n\nhttps://github.com/LineageOS/android_kernel_xiaomi_onclite/blob/1f5e331dce804a190c96cc30565f44986f9233e9/techpack/audio/asoc/codecs/sdm660_cdc/msm-analog-cdc.c#L1883",
+      "revId": "b26524dc6e2b49f4adc484e2344f2494916ca04c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
