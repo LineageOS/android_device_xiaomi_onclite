@@ -56,7 +56,7 @@ fi
 function blob_fixup() {
     case "${1}" in
     vendor/lib/hw/camera.msm8953.so)
-        "${PATCHELF}" --add-needed camera.msm8953_shim.so "${2}"
+        "${PATCHELF}" --add-needed libui_shim.so "${2}"
         ;;
     esac
 }
