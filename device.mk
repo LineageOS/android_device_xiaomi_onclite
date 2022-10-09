@@ -386,8 +386,7 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    camera.msm8953_shim \
-    libshim_dpmframework
+    camera.msm8953_shim
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
