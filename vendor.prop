@@ -31,6 +31,9 @@ ro.soc.model=SDM450
 ro.vendor.display.cabl=0
 ro.vendor.display.sensortype=2
 
+# DPM
+persist.vendor.dpmhalservice.enable=1
+
 # DRM
 drm.service.enabled=true
 

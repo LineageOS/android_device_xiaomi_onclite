@@ -946,32 +946,24 @@ vendor/bin/consumerird
 vendor/lib/hw/consumerir.default.so
 vendor/lib64/hw/consumerir.default.so
 
-# DPM - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
-framework/tcmclient.jar|6ef9ca98f67c144fc8ae941bb3a47f99cbd93098
-product/bin/dpmd|cac8f3eadeeec202f56d5b5f7a8c75e82e376d9f
-product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
-product/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669
-product/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac30da06c09
-product/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d
-product/framework/com.qti.dpmframework.jar|e39a7e06af2d1e95a3724c19c36b8716277f53a1
-product/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
-product/lib/com.qualcomm.qti.dpm.api@1.0.so|50a6e8edcad48708d0b0cac98e7f9be98bdea225
-product/lib/libdpmctmgr.so|7ac017c1861d2b715074083daef2aa1a6cd6021b
-product/lib/libdpmfdmgr.so|2be3f4e034af1399a8aef1012708591bc3a001f9
-product/lib/libdpmframework.so|3def0c2c741d9092197d499bef6d245b8430a4c7
-product/lib/libdpmtcm.so|b9bc8c5e52b609d97a7e0fe79f3189bdd5bc80a2
-product/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe1950bb
-product/lib64/libdpmctmgr.so|7ee0d1d40a8fc7fea924602db13717235ed2c2aa
-product/lib64/libdpmfdmgr.so|cb0157da0ffe6827471662a5b7881e85165cb5aa
-product/lib64/libdpmframework.so|dedfeed9df7531f7eea4f968fc980c6bee3c02e5
-product/lib64/libdpmtcm.so|a98ab3c419ebe49c6f3351ef4fa64ebda65d0e7d
--product/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
-vendor/bin/dpmQmiMgr|a43829d478ebc243b5f7307b44aa501a7a3c8211
-vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
-vendor/lib/com.qualcomm.qti.dpm.api@1.0.so|50a6e8edcad48708d0b0cac98e7f9be98bdea225
-vendor/lib/libdpmqmihal.so|f618b7d9387d35b757377f47452f503d8b405ed9
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe1950bb
-vendor/lib64/libdpmqmihal.so|25d74c0e867f023b71a7c599ab6d213c7de2725d
+# DPM - from FP3-user 11 8901.4.A.0010 gms-f74c58a8 release-keys
+system_ext/bin/dpmd|dc94ffe90c6658b0bc99c64f68517c4048d0321a
+system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
+system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
+system_ext/etc/permissions/com.qti.dpmframework.xml|c4b7ad0879d00c1eba4f3fe3a88ddb8aa153629a
+system_ext/etc/permissions/dpmapi.xml|9158c9789cc7135a685b3fb27f8cc27108b51fef
+system_ext/framework/com.qti.dpmframework.jar|96a29e28b3abffb9223daadd67459e3f5a3271df
+system_ext/framework/dpmapi.jar|2e2fbe2257a697b96a644c774136da0554430d3f
+system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|b992e1f565f7b8b814eac0c88517543e6d0de603
+system_ext/lib64/libdpmctmgr.so|8a687fce30df9483a96065e6cc4154f03562dfa9
+system_ext/lib64/libdpmfdmgr.so|bf3666db17e77da3a303c10579baec0bd018089f
+system_ext/lib64/libdpmframework.so|235fbb48b47baebd48dbe56f72c77d97ca12c07c
+system_ext/lib64/libdpmtcm.so|dff3d3dbacd18ed55b5758a174f5016ef9e7a896
+-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|10828ba0d987fa884ad0b4a87a46bf9f505535ea
+vendor/bin/dpmQmiMgr|61a421804559b0e461439c19088acc01b871982a
+vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|d9f1aa7f93b928f42499d613d20ccbc60f279097
+vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 
 # DRM - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
 vendor/bin/qseecomd|98e59e53f6bf2e585120f07f93d1265acfa80e7b
