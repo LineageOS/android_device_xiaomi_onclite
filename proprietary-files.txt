@@ -965,28 +965,27 @@ vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|d9f1aa7f93b928f42499d613d20ccbc60f279097
 vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 
-# DRM - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
-vendor/bin/qseecomd|98e59e53f6bf2e585120f07f93d1265acfa80e7b
-vendor/lib/libQSEEComAPI.so|199f80aa6b940204fe1119aa196a3f939a2d499e
-vendor/lib64/libGPreqcancel.so|a5f7f9679fdd081c9b9ea8f5c4a3714761ca997c
-vendor/lib64/libGPreqcancel_svc.so|82ee3c978563896569468fdc006455b3f28f35e9
-vendor/lib64/libQSEEComAPI.so|597926ec6d1fca95a76f65f52659920c441d84c2
-vendor/lib64/libSecureUILib.so|b48ed2e7cdb41d08c238a1fd171d9e7f8032516a
-vendor/lib64/libStDrvInt.so|2947474aad631d5345283e57a38003b6373b2d11
-vendor/lib64/libdrmfs.so|bcae118bb9d2b07a2dae7fdcb30196293217e9ae
-vendor/lib64/libdrmtime.so|a8b04641f437e6235b3d708fe9ba486526f91ab2
-vendor/lib64/libqisl.so|491ac949ab488299c7a1ae4fe8257ec0a6f994b1
-vendor/lib64/librpmb.so|b74dce3afd27fee2caf7604032dad696211dd050
-vendor/lib64/libsecureui.so|dc3ccde15c3bdbc14da9fdc63dbf30973c5fe1b1
-vendor/lib64/libsecureui_svcsock.so|a7fdcd8001d4cdd9a30eb1ccc129324c398cc203
-vendor/lib64/libssd.so|33d717f793c2579e3bd17b5ce6534cb68c12887d
+# DRM - from FP3-user 11 8901.4.A.0010 gms-f74c58a8 release-keys
+vendor/bin/qseecomd|5b40595c23a54d13fb611311a4ab9b22a9428e86
+vendor/lib64/libGPreqcancel.so|b9efbc8623981e1249ad0a0f8964b2b655d2b334
+vendor/lib64/libGPreqcancel_svc.so|d539a9c7368973264e71700824b21ce8e5339441
+vendor/lib64/libQSEEComAPI.so|c94db2c194c9edebe5e6c40d63bec1589432d62e
+vendor/lib64/libSecureUILib.so|19e0cd0438cf94953722355357e1a42a3209216e
+vendor/lib64/libStDrvInt.so|1161fc5b029125b2ac87a27e88555c14725f182f
+vendor/lib64/libdrmfs.so|95da701370dd40644baab29d60a6613888ce1ea0
+vendor/lib64/libdrmtime.so|ca5000d5e7f7c16f197fc669f7a5170023d2e4c9
+vendor/lib64/libqisl.so|c79719eebc094c2af9561e8df2c158638b111b70
+vendor/lib64/librpmb.so|4ae66b5b5d27b0302bb1d0a5f2396958ed8209c9
+vendor/lib64/libsecureui.so|1cb5b3e219c31b6fe5e7ba5b27d434e045e085ed
+vendor/lib64/libsecureui_svcsock.so|ba9f7aa7605e54110afea5d9921381f6e6d71a19
+vendor/lib64/libssd.so|5b9ac8a457118b1e1b80f87fdc0e78d916ee099a
 
-# DRM-Widevine - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine|e130b8f1c8d46d8a185b00cba5ff8a2a871ee94c
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|dee5b7838ac561a2292e89fc0c4ccd1932224215
-vendor/lib/mediadrm/libwvdrmengine.so|248970aba6bd653fda3ce2da5d71e1ee0cea656d
-vendor/lib64/libwvhidl.so|72ebe6aa5c8f5a681979423149896b3d2201d974
-vendor/lib64/mediadrm/libwvdrmengine.so|449c86e23afe6f3f0055e3b2f9af4ecc23afabca
+# DRM-Widevine - from FP3-user 11 8901.4.A.0010 gms-f74c58a8 release-keys
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|57d280849768bc5d5e9e954b9ac90a5a31c54172
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|a9ce64f68c86725c06c1b1429e90b04ff96ebf60
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/lib64/libwvhidl.so|ac0b1ec273600257cbba84f43f153d8ebf4db872
+vendor/lib64/mediadrm/libwvdrmengine.so|fd0eecdd273d86563f95ae79cc80f9f51fc44e32
 
 # Display-calibration
 vendor/etc/qdcm_calib_data_CSOT_otm1901a_video_mode_dsi_panel.xml
@@ -1358,19 +1357,14 @@ vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8a
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|8e1608876dcdd4925999e0f4f34603f53c201fd1
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|e28476fe7646ba4467cf4c8ff6417135bc1421c7
 
-# QTEE - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|4d4f6f54c856ccdab0fbdda7a5064b24cf72fcd9
+# QTEE - from FP3-user 11 8901.4.A.0010 gms-f74c58a8 release-keys
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|a12cd8a3d326609ee0f0a0cdb5cfc69bd2085f1e
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|f3f5c4216b9a505affbe955a85a56bd39ca1ab74
-vendor/lib/libGPQTEEC_vendor.so|ff57cecc96e32f96564a3b1bb113546eeda045d2
-vendor/lib/libGPTEE_vendor.so|5e817e8ea584fbc02b0098e37f76ccb9d0d2d066
-vendor/lib/libQTEEConnector_vendor.so|dc6380f349dfae6258478b3bf9d329c182e12350
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|aa174ab5a60ba9ade3f90f13ae535e1ecdd9e9ec
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|bc058b17763ed26f882d1042d2012f05022fa8f4
-vendor/lib64/libGPQTEEC_vendor.so|f378e4434df01922c9829406121d77bb3c6afd2c
-vendor/lib64/libGPTEE_vendor.so|0bc88c8e6bbe3b38e5c2229f5dfedf38c0e320d8
-vendor/lib64/libQTEEConnector_vendor.so|68128f4409069546f0dcfabb379e3ec031ce3a36
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|7bc3032b846e896c67dac44f413db78d2acbf99b
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|5c9a5ec3341030b58d88441efaddaa7843dd6641
+vendor/lib64/libGPQTEEC_vendor.so|bc884615f468508bd7f7fec793414d9fde58f0d0
+vendor/lib64/libGPTEE_vendor.so|527c8393ef416a9ddca4337fb4b5a1618551de44
+vendor/lib64/libQTEEConnector_vendor.so|22c4dfe5813f6f923a30ad9470227a65a217ab4a
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|0f684ab4d6f4b76b248b1da6e747ff2454c68d8c
 
 # Radio - from FP3-user 11 8901.4.A.0010 gms-f74c58a8 release-keys
 -system_ext/app/embms/embms.apk|09134a1bd2d67e55caf81af08ac44f02abd55d18
@@ -1655,11 +1649,11 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1c00fa1fa795fcceba9c11a449f9bcc1d2e53a11
 vendor/lib64/vendor.qti.hardware.soter@1.0.so|0cc653294e81fd394ccd9dcb368de6bfa0914619
 
-# TUI - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|05c0a47f24e38b14fc7c1ccfa64c585692277ee5
+# TUI - from FP3-user 11 8901.4.A.0010 gms-f74c58a8 release-keys
+system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so|9d36beb8fa964584aae64a109543a4997417d70a
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|15378114c18fd1b1c8f9671f656396285ad1de48
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|313677dd28de6f6b2a5cf8b136d8ce0723bb5a65
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|b478f9ba87abd265ac15a154ab7412fed5839664
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|f6b0e0e951394b609f0cb5c19e83a37447d9d292
 
 # Thermal - from MIUI-V11.0.2.0.QFLCNXM beta
 vendor/bin/thermal-engine|a8bc9bb1ed717c886316dd42b8af0ebb59b2bbec
