@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "476088ce_f4d4633a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2022-10-09T14:40:32Z",
+      "side": 1,
+      "message": "FP3 IMS is not broadcasting this intent.",
+      "revId": "acfc8d27eec7fa125ab538f624183695e3f7bee6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
