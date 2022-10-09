@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e6097ab_71cf6563",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2022-10-09T14:29:22Z",
+      "side": 1,
+      "message": "FP3 don\u0027t have the vendor.qti.imsrcs",
+      "revId": "36df0add1f5dad1a62da6cc5e1e3b60ad8939f36",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
