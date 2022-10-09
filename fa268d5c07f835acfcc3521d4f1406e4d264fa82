@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "160b20f6_08aa32b4",
+        "filename": "manifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-10-09T20:39:11Z",
+      "side": 0,
+      "message": "Are you sure about this?",
+      "range": {
+        "startLine": 79,
+        "startChar": 0,
+        "endLine": 80,
+        "endChar": 51
+      },
+      "revId": "fa268d5c07f835acfcc3521d4f1406e4d264fa82",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
