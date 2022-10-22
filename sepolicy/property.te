@@ -1,2 +1,6 @@
 # Fingerprint
 system_public_prop(vendor_fp_prop)
+
+# Wlan
+vendor_internal_prop(vendor_wifi_config)
+
