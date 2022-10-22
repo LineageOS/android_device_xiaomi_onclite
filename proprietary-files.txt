@@ -36,8 +36,6 @@ vendor/lib/com.qualcomm.qti.ant@1.0.so|8119c98f53a94736d95a2fb59225e0a054e038b8
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
 
 # Audio - from FP3-user 11 8901.4.A.0010 gms-f74c58a8 release-keys
-system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
--system_ext/framework/audiosphere.jar|9c28317f12b93a6d881c80a991ff24716fce4a12
 vendor/bin/audioflacapp|7f75e93e6524528d6f19c2955183ecf525ac3d64
 vendor/lib/libacdb-fts.so|458980ecf3ba88c4e6d4862af727ac8b52a8c943
 vendor/lib/libacdbloader.so|8e5758fbaa7a1c717d7ff15851972951697a0ee2
@@ -52,7 +50,6 @@ vendor/lib/libaudio_log_utils.so|f8b3bb97c9b272790809ac0a637be4211a78efea
 vendor/lib/libdrc.so|7dbd6cef13d7e8ad18b1a49aa92a7d83da24c96a
 vendor/lib/libqtigef.so|b38ae7f8880f5dd90b306e1c96283da1d11f8862
 vendor/lib/libsurround_3mic_proc.so|98038406a407141f77fb7c81b512b8163261d958
-vendor/lib/soundfx/libasphere.so|9370608d3c52e46e966c4fb12232687647e9da4f
 vendor/lib64/libacdb-fts.so|05760bb66071dbe10c10f105901710c18e4b20ce
 vendor/lib64/libacdbloader.so|cf69f69f856ea26adfcee9b4a60d6c72bb9e4b2b
 vendor/lib64/libacdbrtac.so|7e3c1165cc2290446eb5fe198011e652f7ac6d29
@@ -63,7 +60,6 @@ vendor/lib64/libaudioconfigstore.so|f75502456cea4dbfc1cd2e0612e886ec861e2a2e
 -vendor/lib64/libaudioparsers.so|98c9851b70fa80dda9cb3e69c76fd3b475a0f2e1
 vendor/lib64/libaudio_log_utils.so|a1727c75a4031b7238c9bcc4182bc8205293a7bd
 vendor/lib64/libqtigef.so|aca3c06bd05feaba5607af00ed06d91d29a1e865
-vendor/lib64/soundfx/libasphere.so|b9296f601776e631be0f347f8f10d26689103d12
 
 # Audio-ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
