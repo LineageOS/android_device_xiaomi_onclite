@@ -65,7 +65,6 @@ on early-boot
     write /sys/kernel/boot_slpi/boot 1
     write /sys/devices/virtual/cvp/cvp/boot 1
     exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
-    exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qti.can.sh
     setprop ro.sf.lcd_density ${vendor.display.lcd_density}
 
     # for backward compatibility
