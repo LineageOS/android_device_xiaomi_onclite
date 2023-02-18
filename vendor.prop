@@ -23,6 +23,9 @@ vendor.voice.voip.conc.disabled=true
 # Bluetooth
 vendor.qcom.bluetooth.soc=pronto
 
+# Camera
+persist.vendor.camera.expose.aux=1
+
 # Chipset
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM450
