@@ -5,7 +5,7 @@
 //
 
 android_app {
-    name: "XiaomiParts",
+    name: "XiaomiParts_onclite",
 
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
@@ -21,4 +21,6 @@ android_app {
     optimize: {
         proguard_flags_files: ["proguard.flags"],
     },
+
+    overrides: ["XiaomiParts"]
 }
