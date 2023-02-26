@@ -1,4 +1,0 @@
-type lirc_device, dev_type;
-
-# Goodix FP device
-type goodix_fp_device, dev_type;
