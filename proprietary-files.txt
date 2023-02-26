@@ -220,10 +220,6 @@ vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
 vendor/lib/libvidhance_gyro.so
 vendor/lib/mibokeh_632_opencl.bin
-vendor/lib64/libbase64.so
-vendor/lib64/libcapiv2svacnn.so
-vendor/lib64/libcapiv2vop.so
-vendor/lib64/libvideoutils.so
 
 # Camera-actuators
 vendor/lib/libactuator_dw9714.so
@@ -928,16 +924,6 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
-vendor/lib64/libmmcamera2_frame_algorithm.so
-vendor/lib64/libmmcamera2_is.so
-vendor/lib64/libmmcamera2_q3a_core.so
-vendor/lib64/libmmcamera2_stats_algorithm.so
-vendor/lib64/libmmcamera2_stats_lib.so
-vendor/lib64/libmmcamera_dbg.so
-vendor/lib64/libmmcamera_faceproc.so
-vendor/lib64/libmmcamera_faceproc2.so
-vendor/lib64/libmmcamera_tintless_algo.so
-vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
 # Charger
 vendor/bin/hvdcp_opti
@@ -1011,12 +997,8 @@ vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|5da074c88802633f64e2b9fe2013e22
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|9d27a7a6cea72a48739e741e749bff2e194d4510
 
 # Fingerprint
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|4ec1563bf0806d58f13337eeff18697d04d7f064
-vendor/etc/permissions/com.fingerprints.extension.xml
-vendor/framework/com.fingerprints.extension.jar
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/com.fingerprints.extension@2.0.so
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/hw/fingerprint.fpc.default.so
@@ -1024,7 +1006,6 @@ vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Firmware
 etc/firmware/ice40.bin
@@ -1112,7 +1093,6 @@ vendor/lib64/vendor.qti.gnss@3.0.so|c5ed668d324e7c898ca026fc12dad8829cd8a944
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|2e33e885b92e413440511049025497945d6b8484
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|71b72d91eb94321a3b35d3e2b03a33e7b50d3b13
-vendor/lib64/hw/gatekeeper.msm8953.so|d760257a98254b9e87ae258e267b1a45a0ed7ecb
 
 # Graphics - from daisy
 lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so|5b006423286008ba9b54b8c29e9ce2ab4b6fa14d
@@ -1187,7 +1167,6 @@ vendor/lib64/vendor.qti.hardware.iop@2.0.so|0b657aa0eaedb463ef96df94b31010449c5a
 # Keymaster - from FP3
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|8bdb9313f8e5faff14d73730fc206803aecd7fbf
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
-vendor/lib64/hw/keystore.msm8953.so|83a48633d4530c45e36cfb9cd7f3d63a8a5bc122
 vendor/lib64/libkeymasterdeviceutils.so|e0ce05020bbd5f9ae3666e37fb67826d410e2c7b
 vendor/lib64/libkeymasterprovision.so|af79833a592818e43dfd386ffb4d58e88fa390ec
 vendor/lib64/libkeymasterutils.so|de50a67e773eac6d52cbb061895249c0ca2ed185
@@ -1654,8 +1633,8 @@ vendor/etc/thermal-engine-map.conf|474264ed357e02b7bb8b757024275a4cb8ff2929
 vendor/etc/thermal-engine-normal.conf|40a3472fb78ee14f295d906ca14a59696504d45a
 vendor/etc/thermal-engine-video.conf|40a3472fb78ee14f295d906ca14a59696504d45a
 vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
--vendor/lib/libthermalclient.so|a18540af4380aab3d6e6e880241b0c74c7967c0b
 vendor/lib/libthermalfeature.so|b2a90496eb99301cc0f065fe97782358858668a3
+-vendor/lib/libthermalclient.so|a18540af4380aab3d6e6e880241b0c74c7967c0b
 -vendor/lib64/libthermalclient.so|13c27adf6e6ce8728854542c3ed8f3d12ade5615
 vendor/lib64/libthermalfeature.so|1c408911610e5b6a11853aff1900860f9e9a861f
 
