@@ -1,5 +1,8 @@
+# Not appended blobs from onc-user-9-PKQ1.181021.001-V11.0.3.0.PFFINXM-release-keys
+# crosshatch Package version: crosshatch-user 10 QP1A.190711.020 5800535 release-keys
+# daisy Package version: daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
 
-# ADSP-Modules - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
+# ADSP-Modules - from daisy
 vendor/lib/rfsa/adsp/dirac_resource.dar|d9b3693eab8c520ef859236b8235752188b7cba0
 vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
 
@@ -14,7 +17,7 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# Bluetooth-AptX - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys
+# Bluetooth-AptX - from crosshatch
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
@@ -797,7 +800,7 @@ vendor/firmware/aw87329_abrcv.bin
 vendor/firmware/aw87329_drcv.bin
 vendor/firmware/aw87329_kspk.bin
 
-# Gatekeeper - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
+# Gatekeeper - from daisy
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|bea6d682011b465a08b9085f7b5e69b965743eee
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|b04d8ae5d3851f29fd8b7c8e034fa0ef04fb96f3
@@ -805,7 +808,7 @@ vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|4bc9f319b3a62f3d8e3e0c539b577027c263e7df
 vendor/lib64/hw/gatekeeper.msm8953.so|1086e5dcda7aa2bed7ac015f7850095f6199a1c2
 
-# Keymaster - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
+# Keymaster - from daisy
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|13a894ea69abc056b754fa9e8f8e828ffd1de38c
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|e502c7046fb6a1955e54936d6c8f4f8c2889b201
 vendor/lib/libkeymasterdeviceutils.so|e3557fd2bc5d01de71b62e378dc51a2696a99768
@@ -817,11 +820,11 @@ vendor/lib64/libkeymasterprovision.so|245fa13cad4dc81e66bc6fc3b7d20fa6c1afdefc
 vendor/lib64/libkeymasterutils.so|126096a6ce1ce50db8193a4617f1b1b0f6b3105c
 vendor/lib64/libqtikeymaster4.so|4fea65bc5cdfb2299100cbaeeb80984780b11a17
 
-# Keystore - from daisy-user-10-QKQ1.191002.002-V11.0.18.0.QDLMIXM-release-keys
+# Keystore - from daisy
 vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
 vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
 
-# Thermal - from MIUI-V11.0.2.0.QFLCNXM beta
+# Thermal - from V11.0.2.0.QFLCNXM beta
 vendor/bin/thermal-engine:vendor/bin/thermal-engine-onc|a8bc9bb1ed717c886316dd42b8af0ebb59b2bbec
 vendor/etc/thermal-engine-map.conf|474264ed357e02b7bb8b757024275a4cb8ff2929
 vendor/etc/thermal-engine-normal.conf|40a3472fb78ee14f295d906ca14a59696504d45a
