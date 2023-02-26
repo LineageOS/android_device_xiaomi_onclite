@@ -58,10 +58,6 @@ vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
 vendor/lib/libvidhance_gyro.so
 vendor/lib/mibokeh_632_opencl.bin
-vendor/lib64/libbase64.so
-vendor/lib64/libcapiv2svacnn.so
-vendor/lib64/libcapiv2vop.so
-vendor/lib64/libvideoutils.so
 
 # Camera-actuators
 vendor/lib/libactuator_dw9714.so
@@ -753,16 +749,6 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
-vendor/lib64/libmmcamera2_frame_algorithm.so
-vendor/lib64/libmmcamera2_is.so
-vendor/lib64/libmmcamera2_q3a_core.so
-vendor/lib64/libmmcamera2_stats_algorithm.so
-vendor/lib64/libmmcamera2_stats_lib.so
-vendor/lib64/libmmcamera_dbg.so
-vendor/lib64/libmmcamera_faceproc.so
-vendor/lib64/libmmcamera_faceproc2.so
-vendor/lib64/libmmcamera_tintless_algo.so
-vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
 # Charger
 vendor/bin/hvdcp_opti:vendor/bin/hvdcp_opti-onc
@@ -775,10 +761,6 @@ vendor/etc/qdcm_calib_data_CSOT_otm1901a_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_boe_hx8394f_video_mode_dsi_panel.xml
 
 # Fingerprint
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
-vendor/etc/permissions/com.fingerprints.extension.xml
-vendor/framework/com.fingerprints.extension.jar
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/com.fingerprints.extension@2.0.so
 vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/hw/fingerprint.fpc.default.so
@@ -786,7 +768,6 @@ vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Firmware
 vendor/firmware/a506_zap.b00
@@ -803,26 +784,15 @@ vendor/firmware/aw87329_kspk.bin
 # Gatekeeper - from daisy
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|bea6d682011b465a08b9085f7b5e69b965743eee
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|b04d8ae5d3851f29fd8b7c8e034fa0ef04fb96f3
-vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|4bc9f319b3a62f3d8e3e0c539b577027c263e7df
-vendor/lib64/hw/gatekeeper.msm8953.so|1086e5dcda7aa2bed7ac015f7850095f6199a1c2
 
 # Keymaster - from daisy
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|13a894ea69abc056b754fa9e8f8e828ffd1de38c
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|e502c7046fb6a1955e54936d6c8f4f8c2889b201
-vendor/lib/libkeymasterdeviceutils.so|e3557fd2bc5d01de71b62e378dc51a2696a99768
-vendor/lib/libkeymasterprovision.so|b7a67b7df996341798e01948745dc63f5386b456
-vendor/lib/libkeymasterutils.so|228caaa1bfa8ac3d434f9ac158ca8d1dc1b8c667
-vendor/lib/libqtikeymaster4.so|986f8c48991f4004acecf8ba1c9e442afdcd9ea2
 vendor/lib64/libkeymasterdeviceutils.so|784e8f3e6bb36214d171ba127454554049d140f5
 vendor/lib64/libkeymasterprovision.so|245fa13cad4dc81e66bc6fc3b7d20fa6c1afdefc
 vendor/lib64/libkeymasterutils.so|126096a6ce1ce50db8193a4617f1b1b0f6b3105c
 vendor/lib64/libqtikeymaster4.so|4fea65bc5cdfb2299100cbaeeb80984780b11a17
-
-# Keystore - from daisy
-vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
-vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
 
 # Thermal - from V11.0.2.0.QFLCNXM beta
 vendor/bin/thermal-engine:vendor/bin/thermal-engine-onc|a8bc9bb1ed717c886316dd42b8af0ebb59b2bbec
@@ -830,5 +800,4 @@ vendor/etc/thermal-engine-map.conf|474264ed357e02b7bb8b757024275a4cb8ff2929
 vendor/etc/thermal-engine-normal.conf|40a3472fb78ee14f295d906ca14a59696504d45a
 vendor/etc/thermal-engine-video.conf|40a3472fb78ee14f295d906ca14a59696504d45a
 vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
-vendor/lib/libthermalfeature.so|b2a90496eb99301cc0f065fe97782358858668a3
 vendor/lib64/libthermalfeature.so|1c408911610e5b6a11853aff1900860f9e9a861f
