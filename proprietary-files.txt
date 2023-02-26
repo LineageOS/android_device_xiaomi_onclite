@@ -1,5 +1,6 @@
 # Not appended blobs from xiaomi/onc/onc:10/QKQ1.191008.001/V12.5.3.0.QFLCNXM:user/release-keys
 # FP3 Package version: Fairphone/FP3/FP3:11/8901.4.A.0010/gms-f74c58a8:user/release-keys
+# PAN Package version: Nokia/Panther_00WW/PAN_sprout:11/RKQ1.200928.002/00WW_3_240:user/release-keys
 # crosshatch Package version: crosshatch-user 10 QP1A.190711.020 5800535 release-keys
 
 # ACDB
@@ -623,6 +624,19 @@ vendor/firmware/aw87329_kspk.bin
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+
+# IMS (System) - uceService - from FP3
+system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
+system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar
+system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar
+system_ext/framework/com.qualcomm.qti.uceservice-V2.3-java.jar
+system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so
+system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so
+system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so
+system_ext/lib64/com.qualcomm.qti.uceservice@2.3.so
+
+# IMS (System) - uceService - from PAN
+-system_ext/app/uceShimService/uceShimService.apk
 
 # Keymaster (QTI) - from FP3
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
