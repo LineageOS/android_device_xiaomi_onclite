@@ -1,0 +1,2 @@
+# Charger
+/(vendor|system/vendor)/bin/hvdcp_opti-onc	u:object_r:hvdcp_exec:s0

@@ -762,7 +762,7 @@ vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
 # Charger
-vendor/bin/hvdcp_opti
+vendor/bin/hvdcp_opti:vendor/bin/hvdcp_opti-onc
 
 # Consumerir
 vendor/lib64/hw/consumerir.default.so
@@ -773,13 +773,11 @@ vendor/etc/qdcm_calib_data_boe_hx8394f_video_mode_dsi_panel.xml
 
 # Fingerprint
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|4ec1563bf0806d58f13337eeff18697d04d7f064
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/com.fingerprints.extension@2.0.so
-vendor/lib64/hw/fingerprint.default.so
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
