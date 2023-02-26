@@ -615,8 +615,6 @@ vendor/firmware/a506_zap.b01
 vendor/firmware/a506_zap.b02
 vendor/firmware/a506_zap.elf
 vendor/firmware/a506_zap.mdt
-vendor/firmware/a530_pfp.fw
-vendor/firmware/a530_pm4.fw
 vendor/firmware/aw87329_abrcv.bin
 vendor/firmware/aw87329_drcv.bin
 vendor/firmware/aw87329_kspk.bin
