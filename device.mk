@@ -35,10 +35,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml
 
-# Camera
-PRODUCT_PACKAGES += \
-    libgui_vendor
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8953
@@ -55,7 +51,7 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0.vendor
+    android.hardware.keymaster@4.1.vendor
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -64,10 +60,6 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
-
-# Shims
-PRODUCT_PACKAGES += \
-    camera.msm8953_shim
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
