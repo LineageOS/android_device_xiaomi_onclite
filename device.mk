@@ -14,7 +14,10 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/xiaomi/onclite/onclite-vendor.mk)
+TARGET_USES_DEVICE_SPECIFIC_THERMAL_ENGINE_CONF := true
+
+# Inherit from msm8953-common
+$(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -36,6 +39,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libgui_vendor
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8953
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
@@ -50,6 +57,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    init.xiaomi.device.rc
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
@@ -61,3 +72,6 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Inherit from vendor blobs
+$(call inherit-product, vendor/xiaomi/onclite/onclite-vendor.mk)
