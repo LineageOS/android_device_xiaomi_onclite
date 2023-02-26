@@ -42,6 +42,9 @@ TARGET_KERNEL_LLVM_BINUTILS := false
 # Assert
 TARGET_OTA_ASSERT_DEVICE := onclite,onc
 
+# Display
+TARGET_SCREEN_DENSITY := 280
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
