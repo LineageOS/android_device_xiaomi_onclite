@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1ac95dc_12e06148",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2023-02-26T16:39:37Z",
+      "side": 1,
+      "message": "1) Testing right now\n2) Wait until msm8953-common is shipped with my changes",
+      "revId": "fd3e8255c313afafa292c49707fdf28cfc05da64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
