@@ -1,0 +1,5 @@
+# Charger
+/(vendor|system/vendor)/bin/hvdcp_opti-onc	u:object_r:hvdcp_exec:s0
+
+# Thermal
+/(vendor|system/vendor)/bin/thermal-engine-onc	u:object_r:thermal-engine_exec:s0
