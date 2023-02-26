@@ -758,7 +758,7 @@ vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
 # Charger
-vendor/bin/hvdcp_opti
+vendor/bin/hvdcp_opti:vendor/bin/hvdcp_opti-onc
 
 # Consumerir
 vendor/lib64/hw/consumerir.default.so
@@ -769,13 +769,11 @@ vendor/etc/qdcm_calib_data_boe_hx8394f_video_mode_dsi_panel.xml
 
 # Fingerprint
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|4ec1563bf0806d58f13337eeff18697d04d7f064
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/com.fingerprints.extension@2.0.so
-vendor/lib64/hw/fingerprint.default.so
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
@@ -820,7 +818,7 @@ vendor/lib/hw/keystore.msm8953.so|c56d3768e04fc180d844dbca94be8c27770e37d5
 vendor/lib64/hw/keystore.msm8953.so|9660e1c13a3589114cf18db58e5b3c3c9e14059b
 
 # Thermal - from MIUI-V11.0.2.0.QFLCNXM beta
-vendor/bin/thermal-engine|a8bc9bb1ed717c886316dd42b8af0ebb59b2bbec
+vendor/bin/thermal-engine:vendor/bin/thermal-engine-onc|a8bc9bb1ed717c886316dd42b8af0ebb59b2bbec
 vendor/etc/thermal-engine-map.conf|474264ed357e02b7bb8b757024275a4cb8ff2929
 vendor/etc/thermal-engine-normal.conf|40a3472fb78ee14f295d906ca14a59696504d45a
 vendor/etc/thermal-engine-video.conf|40a3472fb78ee14f295d906ca14a59696504d45a

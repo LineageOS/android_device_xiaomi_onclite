@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Inherit from common msm8953-common
+include device/xiaomi/msm8953-common/BoardConfigCommon.mk
+
 DEVICE_PATH := device/xiaomi/onclite
 
 # AVB
