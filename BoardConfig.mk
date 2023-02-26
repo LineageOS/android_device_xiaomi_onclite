@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Partitions
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
 # Inherit from common msm8953-common
 include device/xiaomi/msm8953-common/BoardConfigCommon.mk
 
@@ -47,7 +50,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Partitions
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3758096384
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
