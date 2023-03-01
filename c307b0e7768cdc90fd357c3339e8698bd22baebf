@@ -33,6 +33,23 @@
       "message": "is ok",
       "revId": "c307b0e7768cdc90fd357c3339e8698bd22baebf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a65db54b_b06af0de",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2023-03-01T12:30:18Z",
+      "side": 1,
+      "message": "no pls... who else had also put system optimizations in device tree in official LineageOS?\n\nAlso, onclite would join msm8953-common on 20, system.prop would get removed from onclite tree by then",
+      "revId": "c307b0e7768cdc90fd357c3339e8698bd22baebf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
