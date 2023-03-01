@@ -16,6 +16,23 @@
       "message": "go is ready",
       "revId": "c307b0e7768cdc90fd357c3339e8698bd22baebf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a8394d8_080802e2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27322
+      },
+      "writtenOn": "2023-03-01T11:54:16Z",
+      "side": 1,
+      "message": "is ok",
+      "revId": "c307b0e7768cdc90fd357c3339e8698bd22baebf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
