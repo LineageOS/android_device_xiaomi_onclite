@@ -141,6 +141,7 @@ Return<void> Vibrator::perform(Effect effect, EffectStrength strength, perform_c
     setAmplitude(amplitude);
 
     ms = effectToMs(effect, &status);
+    ALOGI("ms = %u", ms);
     if (status != Status::OK) {
         _hidl_cb(status, 0);
         return Void();
