@@ -31,6 +31,11 @@ static const std::string kLedVibDeviceDir = "/sys/class/leds/vibrator/";
 static const std::string kLedVibDeviceActivateFile = kLedVibDeviceDir + "activate";
 static const std::string kLedVibDeviceDurationFile = kLedVibDeviceDir + "duration";
 static const std::string kLedVibDeviceStateFile = kLedVibDeviceDir + "state";
+static const std::string kLedVibDeviceVmaxMvFile = kLedVibDeviceDir + "vmax_mv";
+
+static constexpr uint32_t QPNP_VIB_LDO_VMIN_MV = 1504;
+static constexpr uint32_t QPNP_VIB_LDO_VMAX_MV = 3544;
+static constexpr uint32_t MV_ADDITION_MAX = QPNP_VIB_LDO_VMAX_MV - QPNP_VIB_LDO_VMIN_MV;
 
 static constexpr uint32_t MS_PER_S = 1000;
 static constexpr uint32_t NS_PER_MS = 1000000;
@@ -62,10 +67,19 @@ Return<bool> Vibrator::supportsAmplitudeControl() {
 }
 
 Return<Status> Vibrator::setAmplitude(uint8_t amplitude) {
-    if (!amplitude) {
+    if (amplitude < 0) {
         return Status::BAD_VALUE;
     }
-    ALOGI("Amplitude: %u -> %u\n", mAmplitude, amplitude);
+
+    uint32_t mv_addition = amplitude * MV_ADDITION_MAX / 0xFF;
+    uint32_t mv = QPNP_VIB_LDO_VMIN_MV + mv_addition;
+    if (!android::base::WriteStringToFile(std::to_string(mv), kLedVibDeviceVmaxMvFile)) {
+        ALOGE("Failed to set amplitude!");
+        return Status::UNKNOWN_ERROR;
+    }
+
+    ALOGI("Amplitude: %u -> %u, mv = %u, mv_addition = %u\n",
+            mAmplitude, amplitude, mv, mv_addition);
     mAmplitude = amplitude;
     return Status::OK;
 }
@@ -272,9 +286,9 @@ uint32_t Vibrator::effectToMs(Effect effect, Status* status) {
 uint8_t Vibrator::strengthToAmplitude(EffectStrength strength, Status* status) {
     switch (strength) {
         case EffectStrength::LIGHT:
-            return 128;
+            return 0;
         case EffectStrength::MEDIUM:
-            return 192;
+            return 127;
         case EffectStrength::STRONG:
             return 255;
     }
