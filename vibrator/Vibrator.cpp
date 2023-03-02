@@ -16,6 +16,7 @@
 
 #define LOG_TAG "VibratorService"
 
+#include <android-base/file.h>
 #include <log/log.h>
 
 #include "Vibrator.h"
@@ -25,6 +26,11 @@ namespace hardware {
 namespace vibrator {
 namespace V1_3 {
 namespace implementation {
+
+static const std::string kLedVibDeviceDir = "/sys/class/leds/vibrator/";
+static const std::string kLedVibDeviceActivateFile = kLedVibDeviceDir + "activate";
+static const std::string kLedVibDeviceDurationFile = kLedVibDeviceDir + "duration";
+static const std::string kLedVibDeviceStateFile = kLedVibDeviceDir + "state";
 
 static constexpr uint32_t MS_PER_S = 1000;
 static constexpr uint32_t NS_PER_MS = 1000000;
@@ -142,11 +148,17 @@ Return<void> Vibrator::perform(T effect, EffectStrength strength, perform_cb _hi
     return perform(static_cast<Effect>(effect), strength, _hidl_cb);
 }
 
-Status Vibrator::enable(bool enabled) {
+Status Vibrator::enable(bool enabled, uint32_t ms) {
     if (mExternalControl) {
         ALOGW("Enabling/disabling while the vibrator is externally controlled is unsupported!");
         return Status::UNSUPPORTED_OPERATION;
     } else {
+        if (!android::base::WriteStringToFile(enabled ? "1" : "0", kLedVibDeviceStateFile) ||
+            !android::base::WriteStringToFile(std::to_string(ms), kLedVibDeviceDurationFile) ||
+            !android::base::WriteStringToFile(enabled ? "1" : "0", kLedVibDeviceActivateFile)) {
+            ALOGE("Failed to enable vibration!");
+            return Status::UNKNOWN_ERROR;
+        }
         ALOGI("Enabled: %s -> %s\n", mEnabled ? "true" : "false", enabled ? "true" : "false");
         mEnabled = enabled;
         return Status::OK;
@@ -158,7 +170,7 @@ Status Vibrator::activate(uint32_t ms) {
     Status status = Status::OK;
 
     if (ms > 0) {
-        status = enable(true);
+        status = enable(true, ms);
         if (status != Status::OK) {
             return status;
         }
@@ -176,7 +188,7 @@ Status Vibrator::activate(uint32_t ms) {
     if ((status != Status::OK) || !ms) {
         Status _status;
 
-        _status = enable(false);
+        _status = enable(false, 0);
 
         if (status == Status::OK) {
             status = _status;
@@ -195,7 +207,7 @@ void Vibrator::timeout() {
     }
 
     if (ts.it_value.tv_sec == 0 && ts.it_value.tv_nsec == 0) {
-        enable(false);
+        enable(false, 0);
     }
 }
 
