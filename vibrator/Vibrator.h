@@ -57,7 +57,7 @@ class Vibrator : public IVibrator {
     Return<void> perform(Effect effect, EffectStrength strength, perform_cb _hidl_cb);
     template <typename T>
     Return<void> perform(T effect, EffectStrength strength, perform_cb _hidl_cb);
-    Status enable(bool enabled);
+    Status enable(bool enabled, uint32_t ms);
     Status activate(uint32_t ms);
     void timeout();
 

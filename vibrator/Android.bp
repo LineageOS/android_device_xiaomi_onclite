@@ -22,6 +22,7 @@ cc_binary {
     srcs: ["service.cpp", "Vibrator.cpp"],
     cflags: ["-Wall", "-Werror"],
     shared_libs: [
+        "libbase",
         "libhidlbase",
         "liblog",
         "libutils",
