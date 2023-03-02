@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.vibrator@1.3-service.example"
+#define LOG_TAG "android.hardware.vibrator@1.3-service.xiaomi_onclite"
 
 #include <android/hardware/vibrator/1.3/IVibrator.h>
 #include <hidl/HidlTransportSupport.h>
