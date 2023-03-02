@@ -379,9 +379,9 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
 # Vibrator
+TARGET_USES_DEVICE_SPECIFIC_VIBRATOR := true
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service
+    android.hardware.vibrator@1.3-service.xiaomi_onclite
 
 # Whitelisted app
 PRODUCT_COPY_FILES += \
