@@ -1,2 +1,5 @@
 # Charger
 /(vendor|system/vendor)/bin/hvdcp_opti-onc	u:object_r:hvdcp_exec:s0
+
+# HALs
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator@1\.3-service\.xiaomi_onclite		u:object_r:hal_vibrator_default_exec:s0

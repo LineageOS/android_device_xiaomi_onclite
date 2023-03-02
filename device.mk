@@ -15,6 +15,7 @@
 #
 
 TARGET_USES_DEVICE_SPECIFIC_THERMAL_ENGINE_CONF := true
+TARGET_USES_DEVICE_SPECIFIC_VIBRATOR := true
 
 # Inherit from msm8953-common
 $(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
@@ -68,6 +69,10 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.3-service.xiaomi_onclite
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/onclite/onclite-vendor.mk)
