@@ -222,9 +222,9 @@ uint32_t Vibrator::effectToMs(Effect effect, Status* status) {
 uint8_t Vibrator::strengthToAmplitude(EffectStrength strength, Status* status) {
     switch (strength) {
         case EffectStrength::LIGHT:
-            return 0;
+            return 63;
         case EffectStrength::MEDIUM:
-            return 127;
+            return 159;
         case EffectStrength::STRONG:
             return 255;
     }
