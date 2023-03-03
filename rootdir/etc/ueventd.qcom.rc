@@ -424,3 +424,5 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/lirc0                0660   system     system
 /dev/peel_ir              0660   system     system
 
+# Charger
+/sys/class/power_supply/battery  battery_charging_enabled    0660    system  system
