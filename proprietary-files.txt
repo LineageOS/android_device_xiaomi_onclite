@@ -2,6 +2,7 @@
 # FP3 Package version: Fairphone/FP3/FP3:11/8901.4.A.0010/gms-f74c58a8:user/release-keys
 # PAN Package version: Nokia/Panther_00WW/PAN_sprout:11/RKQ1.200928.002/00WW_3_240:user/release-keys
 # crosshatch Package version: crosshatch-user 10 QP1A.190711.020 5800535 release-keys
+# onc (Pie) Package version: xiaomi/onc/onc:9/PKQ1.181021.001/V11.0.7.0.PFLMIXM:user/release-keys
 
 # ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
@@ -22,7 +23,7 @@ vendor/lib/rfsa/adsp/libdirac-capiv2.so
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
-# Camera stack
+# Camera stack - from onc (Pie)
 vendor/lib/hw/camera.msm8953.so
 vendor/lib/libFaceGrade.so
 vendor/lib/libSNPE.so
@@ -111,8 +112,6 @@ vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_quadracfa.so
-vendor/lib/libmmcamera_sat_test_lib.so
-vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
@@ -131,13 +130,12 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
-vendor/lib/libseemore.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
 vendor/lib/libvidhance.so
 vendor/lib/libvidhance_gyro.so
 
-# Camera modules
+# Camera modules - from onc (Pie)
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/onc_imx486_sunny_India_ii_chromatix.xml
 vendor/etc/camera/onc_imx486_sunny_ii_chromatix.xml
