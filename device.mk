@@ -21,8 +21,15 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+<<<<<<< HEAD   (c3fe71 onclite: Update Gatekeeper/Keymaster blobs from FP3)
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay/frameworks/opt/net/wifi
+=======
+
+PRODUCT_PACKAGES += \
+    OncWifiOverlay \
+    WifiOverlay
+>>>>>>> CHANGE (b9989e onclite: rro_overlays: Set correct hotspot SSID)
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
