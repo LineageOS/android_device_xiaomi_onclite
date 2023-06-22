@@ -42,6 +42,8 @@ void set_model_props(const std::string &model) {
         std::string prop = "ro.product." + source + "model";
         property_override(prop, model);
     }
+    // Set bluetooth name
+    property_override("bluetooth.device.default_name", model);
 }
 
 void set_device_model() {
