@@ -58,6 +58,9 @@ function blob_fixup() {
     vendor/lib/hw/camera.msm8953.so)
         "${PATCHELF}" --add-needed libui_shim.so "${2}"
         ;;
+    vendor/lib/lib_lowlight.so)
+        "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+        ;;
     esac
 }
 
