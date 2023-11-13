@@ -512,11 +512,6 @@ service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
     group radio cache inet misc audio sdcard_r sdcard_rw diag log
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
-service charger /system/bin/charger
-    class charger
-    group system graphics
-    seclabel u:r:charger:s0
-
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
     class core
     user root
@@ -529,7 +524,7 @@ service vendor.msm_irqbal_lb /vendor/bin/msm_irqbalance -f /system/vendor/etc/ms
     group root
     disabled
 
-on charger
+on property:init.svc.vendor.charger=running
     setprop persist.sys.usb.config mass_storage
     start qcom-post-boot
     start vendor.power_off_alarm

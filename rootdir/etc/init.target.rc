@@ -146,7 +146,7 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
     user root
     group system wakelock
 
-on charger
+on property:init.svc.vendor.charger=running
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
