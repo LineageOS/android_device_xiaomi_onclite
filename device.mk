@@ -367,7 +367,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # USB HAL
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.basic
+    android.hardware.usb@1.3-service.basic
 
 # Vibrator
 TARGET_USES_DEVICE_SPECIFIC_VIBRATOR := true
