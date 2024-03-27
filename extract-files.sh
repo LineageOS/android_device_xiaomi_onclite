@@ -64,6 +64,11 @@ function blob_fixup() {
     vendor/lib64/hw/fingerprint.goodix.default.so | vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
         "${PATCHELF_0_17_2}" --replace-needed "libvendor.goodix.hardware.fingerprint@1.0.so" "vendor.goodix.hardware.fingerprint@1.0.so" "${2}"
         ;;
+    vendor/lib64/libril-qc-hal-qmi.so)
+            for v in 1.{0..2}; do
+                sed -i "s|android.hardware.radio.config@${v}.so|android.hardware.radio.c_shim@${v}.so|g" "${2}"
+            done
+        ;;
     esac
 }
 

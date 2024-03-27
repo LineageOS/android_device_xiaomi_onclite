@@ -135,6 +135,9 @@ on property:init.svc.zygote=running
 on property:init.svc.zygote=restarting
     stop ppd
 
+on property:init.svc.vendor.qcrild=running
+    restart vendor.radio-config-1-1-wrapper
+
 service energy-awareness /system/vendor/bin/energy-awareness
     class main
     user root
