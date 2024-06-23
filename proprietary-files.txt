@@ -1313,8 +1313,8 @@ system_ext/lib64/lib-imsvt.so|4f96cc5f27551d0b6cb11ad6447d9ce8829dde47
 system_ext/lib64/lib-imsvtextutils.so|1acf1de305e455a3a924483e5652b37133d10fd1
 system_ext/lib64/lib-imsvtutils.so|dfc5cf0854fe38c191a53ec3bd2a322d05d85567
 system_ext/lib64/libdiag_system.so|ead4f1d1065abca6ef47b522c1934eb7623c1813
-system_ext/lib64/libimscamera_jni.so|cf0992c9defd6f50b7ce9db2ffbd62150d1f69cf
-system_ext/lib64/libimsmedia_jni.so|555e12815cfaab9c2b1ce2afad928c0a624a184c
+system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|cf0992c9defd6f50b7ce9db2ffbd62150d1f69cf
+system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|555e12815cfaab9c2b1ce2afad928c0a624a184c
 system_ext/lib64/vendor.qti.diaghal@1.0.so|dcc31fc969e846ea58ec91a37c1f1e77b49e731e
 system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so|591823402124c266f343d5d7b95cee6743008b48
 system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so|22507045c8b4c8f87625c58ebd88e6326b51109f
