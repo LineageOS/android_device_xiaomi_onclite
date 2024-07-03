@@ -16,6 +16,24 @@
       "message": "https://cs.android.com/android/platform/superproject/main/+/main:external/wpa_supplicant_8/wpa_supplicant/eap_proxy_qmi_oc.mk;l\u003d4?q\u003dBOARD_HAS_QCOM_WLAN\u0026sq\u003d\n\nI can see it\u0027s being used here. not sure if it\u0027s ok to remove",
       "revId": "66e44bf1c0dd5a084311f59d7236eada6029c197",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05601657_28dd51c5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-07-03T20:18:52Z",
+      "side": 1,
+      "message": "That makefile isn\u0027t included anywhere",
+      "parentUuid": "c512bea0_017f52f7",
+      "revId": "66e44bf1c0dd5a084311f59d7236eada6029c197",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
