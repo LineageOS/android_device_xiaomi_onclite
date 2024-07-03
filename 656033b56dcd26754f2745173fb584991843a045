@@ -16,6 +16,24 @@
       "message": "How about fixing tabs and remove usage of $TOPDIR in separate commit?",
       "revId": "656033b56dcd26754f2745173fb584991843a045",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "134f29d0_414ce78e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29742
+      },
+      "writtenOn": "2024-07-03T02:45:44Z",
+      "side": 1,
+      "message": "sure, i\u0027ll abondon this one to avoid conflict",
+      "parentUuid": "0c59cc3e_dfe6c288",
+      "revId": "656033b56dcd26754f2745173fb584991843a045",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
