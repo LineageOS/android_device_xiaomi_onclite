@@ -34,6 +34,24 @@
       "parentUuid": "c512bea0_017f52f7",
       "revId": "66e44bf1c0dd5a084311f59d7236eada6029c197",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "062a4b18_426ca61c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29742
+      },
+      "writtenOn": "2024-07-04T00:47:41Z",
+      "side": 1,
+      "message": "This flag is only a guard for EAP Proxy, which our device does not use that, and there are also no other dependencies related to that flag, or to other makefiles/soongs. CMIIW.",
+      "parentUuid": "05601657_28dd51c5",
+      "revId": "66e44bf1c0dd5a084311f59d7236eada6029c197",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
