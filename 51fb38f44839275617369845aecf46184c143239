@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc84fcbd_e4a650ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29742
+      },
+      "writtenOn": "2024-07-06T16:06:56Z",
+      "side": 1,
+      "message": "to-do: need to remove libRSDriver_adreno lib (32 \u0026 64 bit) in the vendor blobs, before merge.",
+      "revId": "51fb38f44839275617369845aecf46184c143239",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
