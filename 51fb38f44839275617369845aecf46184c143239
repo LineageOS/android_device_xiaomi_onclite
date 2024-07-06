@@ -33,6 +33,24 @@
       "message": "What about apps that still use renderscript?",
       "revId": "51fb38f44839275617369845aecf46184c143239",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ac270ae_469b0fef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29742
+      },
+      "writtenOn": "2024-07-06T17:44:27Z",
+      "side": 1,
+      "message": "It has been deprecated since Android 12, and it has also been 2 years since the release of Android 12.\n\nI\u0027m sure the applications that use it have changed their source code according to the AOSP changes.\n\nhttps://developer.android.com/guide/topics/renderscript/migrate",
+      "parentUuid": "72729065_e7e8db90",
+      "revId": "51fb38f44839275617369845aecf46184c143239",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
