@@ -51,6 +51,52 @@
       "parentUuid": "72729065_e7e8db90",
       "revId": "51fb38f44839275617369845aecf46184c143239",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "710496a3_1f4fcd44",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 954,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-06T21:08:18Z",
+      "side": 1,
+      "message": "Remove.",
+      "range": {
+        "startLine": 953,
+        "startChar": 0,
+        "endLine": 954,
+        "endChar": 72
+      },
+      "revId": "51fb38f44839275617369845aecf46184c143239",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "46f6ca9f_362dec33",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 974,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-06T21:08:18Z",
+      "side": 1,
+      "message": "Remove.",
+      "range": {
+        "startLine": 973,
+        "startChar": 0,
+        "endLine": 974,
+        "endChar": 74
+      },
+      "revId": "51fb38f44839275617369845aecf46184c143239",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
