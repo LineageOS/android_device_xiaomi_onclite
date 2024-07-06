@@ -16,6 +16,23 @@
       "message": "to-do: need to remove libRSDriver_adreno lib (32 \u0026 64 bit) in the vendor blobs, before merge.",
       "revId": "51fb38f44839275617369845aecf46184c143239",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72729065_e7e8db90",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2024-07-06T17:25:40Z",
+      "side": 1,
+      "message": "What about apps that still use renderscript?",
+      "revId": "51fb38f44839275617369845aecf46184c143239",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
