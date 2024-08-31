@@ -957,14 +957,14 @@ vendor/lib64/libsdm-disp-vndapis.so|b1dede9efa81e8d0374343612ad7ad0d967e8e29
 vendor/lib64/libsdmextension.so|47b7fcfb790df4417654c566af1a8a74d4bf3e2f
 vendor/lib64/libtinyxml2_1.so|56d4d5d0ea010f951de219c7b9fd2c9695a5b9d2
 
-# Graphics firmware
-vendor/firmware/a506_zap.b00
-vendor/firmware/a506_zap.b01
-vendor/firmware/a506_zap.b02
-vendor/firmware/a506_zap.elf
-vendor/firmware/a506_zap.mdt
-vendor/firmware/a530_pfp.fw
-vendor/firmware/a530_pm4.fw
+# Graphics firmware - from onc (10)
+vendor/firmware/a506_zap.b00|21d74ee137e4096c2ffcd6f2545b5b2f8f384efa
+vendor/firmware/a506_zap.b01|ed5353883c8cfd13251d299ddb1dc99a7c3d0a9b
+vendor/firmware/a506_zap.b02|3e301fa5905acd05f15836959595791c1241a017
+vendor/firmware/a506_zap.elf|3ae71440cd467848db992dc3a09dae9679ecc130
+vendor/firmware/a506_zap.mdt|e655850e03badd8521c7a86eb175b0af18565a67
+vendor/firmware/a530_pfp.fw|c19e1905c15622d7bb02409e6748959bceda9b08
+vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
 
 # IOP - from daisy
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|42ee66ab1e166a09aa2e9e35d0a731a772b0117f
