@@ -843,35 +843,9 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 
 # Firmware
-etc/firmware/ice40.bin
-vendor/firmware/a225_pfp.fw
-vendor/firmware/a225_pm4.fw
-vendor/firmware/a225p5_pm4.fw
-vendor/firmware/a300_pfp.fw
-vendor/firmware/a300_pm4.fw
-vendor/firmware/a330_pfp.fw
-vendor/firmware/a330_pm4.fw
-vendor/firmware/a420_pfp.fw
-vendor/firmware/a420_pm4.fw
-vendor/firmware/a506_zap.b00
-vendor/firmware/a506_zap.b01
-vendor/firmware/a506_zap.b02
-vendor/firmware/a506_zap.elf
-vendor/firmware/a506_zap.mdt
-vendor/firmware/a530_gpmu.fw2
-vendor/firmware/a530_pfp.fw
-vendor/firmware/a530_pm4.fw
-vendor/firmware/a530v1_pfp.fw
-vendor/firmware/a530v1_pm4.fw
-vendor/firmware/a530v2_seq.fw2
-vendor/firmware/a530v3_gpmu.fw2
-vendor/firmware/a530v3_seq.fw2
-vendor/firmware/a540_gpmu.fw2
 vendor/firmware/aw87329_abrcv.bin
 vendor/firmware/aw87329_drcv.bin
 vendor/firmware/aw87329_kspk.bin
-vendor/firmware/leia_pfp_470.fw
-vendor/firmware/leia_pm4_470.fw
 
 # GPS - from daisy
 vendor/bin/garden_app|f0a1f082c2abaf0ffda363e52361587f1c8a7492
@@ -982,6 +956,15 @@ vendor/lib64/libsdm-diag.so|87373a043267b9b3bb923931a910119a9deb425f
 vendor/lib64/libsdm-disp-vndapis.so|b1dede9efa81e8d0374343612ad7ad0d967e8e29
 vendor/lib64/libsdmextension.so|47b7fcfb790df4417654c566af1a8a74d4bf3e2f
 vendor/lib64/libtinyxml2_1.so|56d4d5d0ea010f951de219c7b9fd2c9695a5b9d2
+
+# Graphics firmware
+vendor/firmware/a506_zap.b00
+vendor/firmware/a506_zap.b01
+vendor/firmware/a506_zap.b02
+vendor/firmware/a506_zap.elf
+vendor/firmware/a506_zap.mdt
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530_pm4.fw
 
 # IOP - from daisy
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so|42ee66ab1e166a09aa2e9e35d0a731a772b0117f
