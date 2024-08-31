@@ -128,6 +128,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     libgui_vendor \
@@ -174,6 +175,11 @@ PRODUCT_PACKAGES += \
 
 # Fastboot
 TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1.vendor \
+    liblzma.vendor
 
 # FM
 PRODUCT_PACKAGES += \
@@ -295,7 +301,8 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_softomx_plugin.vendor
 
 # Power
 PRODUCT_PACKAGES += \
@@ -316,8 +323,9 @@ PRODUCT_PACKAGES += \
 
 # Protobuf
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-vendorcompat \
-    libprotobuf-cpp-lite-vendorcompat
+    libprotobuf-cpp-lite-vendorcompat \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # QTI
 PRODUCT_PACKAGES += \
@@ -346,7 +354,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
+    libion.vendor \
+    libnetutils.vendor \
     librmnetctl \
+    libsqlite.vendor \
     libxml2 \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
@@ -365,7 +376,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libpower.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
