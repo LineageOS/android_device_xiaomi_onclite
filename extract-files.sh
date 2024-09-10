@@ -70,6 +70,10 @@ function blob_fixup() {
         [ "$2" = "" ] && return 0
         "${PATCHELF_0_17_2}" --replace-needed "libvendor.goodix.hardware.fingerprint@1.0.so" "vendor.goodix.hardware.fingerprint@1.0.so" "${2}"
         ;;
+    vendor/lib*/libwvhidl.so)
+        [ "$2" = "" ] && return 0
+        grep -q libcrypto_shim.so "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
+        ;;
         *)
             return 1
             ;;
