@@ -16,6 +16,24 @@
       "message": "fix your kernel",
       "revId": "9b39c65dbaaa7c5ef24132878b0761095ed28d1f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "56e7f456_2b207f11",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29742
+      },
+      "writtenOn": "2024-09-13T06:03:23Z",
+      "side": 1,
+      "message": "It\u0027s from visual, kernel driver can read our mAh correctly",
+      "parentUuid": "67dd0112_5ed71315",
+      "revId": "9b39c65dbaaa7c5ef24132878b0761095ed28d1f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
