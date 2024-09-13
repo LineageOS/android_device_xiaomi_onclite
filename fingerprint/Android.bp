@@ -1,0 +1,13 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc_xml {
+    name: "android.hardware.biometrics.fingerprint@2.1-service.onclite.xml",
+    src: "android.hardware.biometrics.fingerprint@2.1-service.onclite.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
