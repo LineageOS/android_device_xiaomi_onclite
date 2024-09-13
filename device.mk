@@ -178,6 +178,7 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 
 # Fingerprint
 PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.onclite.xml \
     android.hardware.biometrics.fingerprint@2.1.vendor \
     liblzma.vendor
 
