@@ -178,7 +178,7 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1.vendor \
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
     liblzma.vendor
 
 # FM
@@ -389,7 +389,8 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/xiaomi
 
 # USB HAL
 PRODUCT_PACKAGES += \
