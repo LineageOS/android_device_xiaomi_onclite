@@ -64,6 +64,9 @@ function blob_fixup() {
     vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so)
         "${PATCHELF_0_17_2}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
         ;;
+    vendor/lib64/com.fingerprints.extension@2.0.so)
+        "${PATCHELF_0_17_2}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+        ;;
     esac
 }
 
