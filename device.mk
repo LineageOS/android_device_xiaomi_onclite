@@ -180,7 +180,8 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
     com.fingerprints.extension@2.0.vendor \
-    liblzma.vendor
+    liblzma.vendor \
+    vendor.goodix.hardware.fingerprint@1.0.vendor
 
 # FM
 PRODUCT_PACKAGES += \

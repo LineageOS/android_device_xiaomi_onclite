@@ -61,8 +61,8 @@ function blob_fixup() {
     vendor/lib/lib_lowlight.so)
         "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
         ;;
-    vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so)
-        "${PATCHELF_0_17_2}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+    vendor/lib64/hw/fingerprint.goodix.default.so | vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
+        "${PATCHELF_0_17_2}" --replace-needed "libvendor.goodix.hardware.fingerprint@1.0.so" "vendor.goodix.hardware.fingerprint@1.0.so" "${2}"
         ;;
     esac
 }

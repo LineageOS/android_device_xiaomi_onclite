@@ -837,7 +837,6 @@ vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 
 # Firmware
 vendor/firmware/aw87329_abrcv.bin
