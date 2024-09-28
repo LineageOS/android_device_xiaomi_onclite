@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f502832_f4f8122e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2024-09-28T16:55:18Z",
+      "side": 1,
+      "message": "/dev/block/bootdevice/by-name/system is still exists. and actually this commit breaks offline charging.",
+      "revId": "144b4a1dbb7d547180289f82c821d5499f18e108",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
