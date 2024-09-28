@@ -16,6 +16,24 @@
       "message": "These are not used by our device (as per manifest)",
       "revId": "139e2f15e7f9cfc29e5b3665642ed5d5cadc01fc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "48ef31b1_9d79bfa6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29742
+      },
+      "writtenOn": "2024-09-28T11:45:08Z",
+      "side": 1,
+      "message": "Ups. My bad",
+      "parentUuid": "dfc5565c_8d5ec9fe",
+      "revId": "139e2f15e7f9cfc29e5b3665642ed5d5cadc01fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
