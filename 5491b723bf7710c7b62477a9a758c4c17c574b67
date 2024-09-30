@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "643a198f_bee73f26",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29742
+      },
+      "writtenOn": "2024-09-30T02:06:38Z",
+      "side": 1,
+      "message": "Wip need to patch the blobs and updating sha proprietary files",
+      "revId": "5491b723bf7710c7b62477a9a758c4c17c574b67",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
