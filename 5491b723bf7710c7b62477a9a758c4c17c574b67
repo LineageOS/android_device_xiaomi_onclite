@@ -33,6 +33,23 @@
       "message": "Why?",
       "revId": "5491b723bf7710c7b62477a9a758c4c17c574b67",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "47a82b78_d3a13935",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-09-30T05:48:48Z",
+      "side": 1,
+      "message": "onclite has native radio.config@1.1 support, why",
+      "revId": "5491b723bf7710c7b62477a9a758c4c17c574b67",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
