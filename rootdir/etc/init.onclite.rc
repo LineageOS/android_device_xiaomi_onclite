@@ -44,6 +44,9 @@ on boot
     chown system system /sys/devices/platform/soc/soc:fpc1020/fingerdown_wait
     chmod 0660 /sys/devices/platform/soc/soc:fpc1020/fingerdown_wait
 
+on post-fs-data
+    # Create directory for goodix fingerprint
+    mkdir /data/vendor/goodix 0770 system system
 
 on property:sys.fp.vendor=goodix
    setprop ro.boot.fpsensor goodix
