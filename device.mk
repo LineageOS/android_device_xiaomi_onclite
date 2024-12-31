@@ -396,10 +396,6 @@ PRODUCT_PACKAGES += \
 # VINTF
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 
-# VNDK
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so
-
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
