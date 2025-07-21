@@ -16,6 +16,24 @@
       "message": "You don\u0027t need to change `on charger` instances anywhere",
       "revId": "ed8345b0a92f2a478c16c2b72ceef62e2b9d0083",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7514c3c2_3f229d60",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 527,
+      "author": {
+        "id": 24334
+      },
+      "writtenOn": "2025-07-21T17:38:18Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "111f620a_a8574094",
+      "revId": "ed8345b0a92f2a478c16c2b72ceef62e2b9d0083",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
