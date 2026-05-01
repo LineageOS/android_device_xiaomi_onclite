@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e637d0b4_c466dea6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2026-05-01T15:41:34Z",
+      "side": 1,
+      "message": "beside that it looks pretty like you copied a lot from my tree with plenty of unrelated stuff too, does the device even still boot with these changes?",
+      "revId": "38895277490ed1644e46d1b7a985a86fdf8462dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
