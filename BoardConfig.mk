@@ -98,7 +98,9 @@ DEVICE_MATRIX_FILE   := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_onclite
+
+#TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_onclite
+$(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):libinit_onclite)
 TARGET_RECOVERY_DEVICE_MODULES := libinit_onclite
 
 # Kernel
