@@ -2,3 +2,4 @@ type lirc_device, dev_type;
 
 # Goodix FP device
 type goodix_fp_device, dev_type;
+typeattribute system_block_device super_block_device_type;

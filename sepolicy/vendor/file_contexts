@@ -2,7 +2,8 @@
 /data/vendor/goodix(/.*)?                           u:object_r:fp_data_file:s0
 /data/vendor/fpc(/.*)?                              u:object_r:fp_data_file:s0
 /data/gf_data(/.*)?                                 u:object_r:gf_data_file:s0
-
+/firmware                                           u:object_r:rootfs:s0
+/persist(/.*)? u:object_r:mnt_vendor_file:s0
 # FPC FP
 /sys/devices/platform/soc/soc:fpc1020(/.*)?         u:object_r:sysfs_fpc:s0
 
@@ -20,6 +21,10 @@
 
 # IR
 /dev/spidev6\.1                  u:object_r:lirc_device:s0
-
+# Partitions
+/dev/block/platform/soc/7824900\.sdhci/by-name/cust     u:object_r:system_block_device:s0
+/dev/block/platform/soc/7824900\.sdhci/by-name/logdump  u:object_r:metadata_block_device:s0
+/dev/block/platform/soc/7824900\.sdhci/by-name/system   u:object_r:system_block_device:s0
+/dev/block/platform/soc/7824900\.sdhci/by-name/vendor   u:object_r:system_block_device:s0
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril.db			u:object_r:rild_file:s0
