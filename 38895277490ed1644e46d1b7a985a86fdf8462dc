@@ -51,6 +51,24 @@
       "message": "Boots without any new problem, but cannot enter fastbootd mode of Recovery yet.",
       "revId": "38895277490ed1644e46d1b7a985a86fdf8462dc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85000181_0dac4e8c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-05-02T17:37:27Z",
+      "side": 1,
+      "message": "Because you need to build fastbootd lolol",
+      "parentUuid": "11d0e61e_60e1c020",
+      "revId": "38895277490ed1644e46d1b7a985a86fdf8462dc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
