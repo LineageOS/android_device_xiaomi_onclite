@@ -1,0 +1,31 @@
+From 96d92ab3652fb31827938d362f3a115aa06cb3b0 Mon Sep 17 00:00:00 2001
+From: Melody Olvera <molvera@codeaurora.org>
+Date: Thu, 1 Jul 2021 15:53:49 -0700
+Subject: [PATCH 1/2] onclite: Remove racey printk setups
+
+Configure printk from init.qcom.sh only.
+
+Signed-off-by: Hadad <hadad@linuxmail.org>
+Change-Id: I4eff77fd5cd121f31156c2fbdac1208dec6c9ac5
+---
+ rootdir/etc/init.qcom.rc | 4 ----
+ 1 file changed, 4 deletions(-)
+
+diff --git a/rootdir/etc/init.qcom.rc b/rootdir/etc/init.qcom.rc
+index be74a5d..ae2501a 100644
+--- a/rootdir/etc/init.qcom.rc
++++ b/rootdir/etc/init.qcom.rc
+@@ -171,10 +171,6 @@ on boot
+     # an ack packet comes out of order
+     write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
+ 
+-    # Set the console loglevel to < KERN_INFO
+-    # Set the default message loglevel to KERN_INFO
+-    write /proc/sys/kernel/printk "6 6 1 7"
+-
+     # Allow access for CCID command/response timeout configuration
+     chown system system /sys/module/ccid_bridge/parameters/bulk_msg_timeout
+ 
+-- 
+2.53.0
+
