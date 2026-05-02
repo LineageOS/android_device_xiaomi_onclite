@@ -843,7 +843,6 @@ vendor/firmware/aw87329_drcv.bin
 vendor/firmware/aw87329_kspk.bin
 
 # GPS - from daisy
-vendor/bin/garden_app|f0a1f082c2abaf0ffda363e52361587f1c8a7492
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti|7f7006829005658c9b89c61ac02f107d3d6fe470
 vendor/bin/loc_launcher|06793983f836a9b42b5ff3848f8fe177134c1379
 vendor/bin/lowi-server|1fe78b543c14196169ab411acfd9dabbfb4636dd
