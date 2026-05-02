@@ -821,17 +821,17 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 
 # FM - from daisy
-lib/fm_helium.so:system_ext/lib/fm_helium.so
-lib/libfm-hci.so:system_ext/lib/libfm-hci.so
-lib64/fm_helium.so:system_ext/lib64/fm_helium.so
-lib64/libfm-hci.so:system_ext/lib64/libfm-hci.so
--product/lib/vendor.qti.hardware.fm@1.0.so:system_ext/lib/vendor.qti.hardware.fm@1.0.so;DISABLE_DEPS
--product/lib64/vendor.qti.hardware.fm@1.0.so:system_ext/lib64/vendor.qti.hardware.fm@1.0.so;DISABLE_DEPS
+system_ext/lib/fm_helium.so
+system_ext/lib/libfm-hci.so
+system_ext/lib64/fm_helium.so
+system_ext/lib64/libfm-hci.so
+-system_ext/lib/vendor.qti.hardware.fm@1.0.so;DISABLE_DEPS
+-system_ext/lib64/vendor.qti.hardware.fm@1.0.so;DISABLE_DEPS
 -vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so;DISABLE_DEPS
 -vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so;DISABLE_DEPS
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
@@ -898,8 +898,8 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 -vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so;DISABLE_DEPS
 
 # Graphics - from daisy
-lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so
-lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so
+vendor/lib/libsdm-disp-apis.so
+vendor/lib64/libsdm-disp-apis.so
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
