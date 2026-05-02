@@ -41,7 +41,6 @@ vendor/lib/com.qualcomm.qti.ant@1.0.so|8119c98f53a94736d95a2fb59225e0a054e038b8
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
 
 # Audio - from daisy
-vendor/bin/audioflacapp|a8ae278497715aa53f6fb86d5f5af225da0fc5b0
 vendor/etc/diracvdd.bin|f9b07ace60490649c44411504909c7bf8bc73d59
 vendor/lib/libacdb-fts.so|9fb9fe8f1e22e38e41f1517b8f206a50bbb24419
 vendor/lib/libacdbloader.so|f33941720463b3c8215fc644b7d638c6d8ab74c7
