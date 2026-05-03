@@ -83,8 +83,10 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
+vendor/lib/libbtnv.so
 
 # Bluetooth (shared dependencies) - from daisy
 -vendor/lib64/vendor.qti.hardware.fm@1.0.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
@@ -156,6 +158,7 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/lib64/libcacertclient.so
+vendor/lib/libcacertclient.so
 vendor/lib64/libcne.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
@@ -170,6 +173,7 @@ vendor/lib64/vendor.qti.data.factory@2.3.so
 vendor/lib64/vendor.qti.data.mwqem@1.0.so
 vendor/lib64/vendor.qti.data.slm@1.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
+vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so
@@ -833,6 +837,8 @@ system_ext/lib64/libfm-hci.so
 # Fingerprint
 vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/hw/fingerprint.fpc.default.so
+vendor/lib/libwfdmmservice.so
+vendor/lib/libwfdcommonutils_proprietary.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
