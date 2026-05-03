@@ -367,7 +367,7 @@ PRODUCT_COPY_FILES += \
 
 # Fastbootd
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot-service.xiaomi_mithorium_recovery \
+    android.hardware.fastboot-service.xiaomi_onclite_recovery \
     fastbootd
 
 # Sensors
