@@ -977,6 +977,7 @@ vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
 vendor/lib64/libkeymasterprovision.so
 -vendor/lib64/libkeymasterutils.so;DISABLE_DEPS
 -vendor/lib64/libqcbor.so;DISABLE_DEPS
+-vendor/lib/libqcbor.so;DISABLE_DEPS
 -vendor/lib64/libqtikeymaster4.so;DISABLE_DEPS
 
 # Latency - from FP3
