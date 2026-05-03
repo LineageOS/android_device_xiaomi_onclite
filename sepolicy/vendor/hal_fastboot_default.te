@@ -1,0 +1,1 @@
+get_prop(hal_fastboot_default, bootloader_prop)
