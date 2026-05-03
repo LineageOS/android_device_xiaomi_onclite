@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env -S PYTHONPATH=../../../tools/extract-utils python3
 #
 # SPDX-FileCopyrightText: 2016 The CyanogenMod Project
 # SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
