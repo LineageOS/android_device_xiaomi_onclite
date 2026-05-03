@@ -24,7 +24,9 @@ namespace_imports = [
 	"vendor/qcom/opensource/display",
 	"hardware/xiaomi"
 ]
-
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups: lib_fixup_vendor_suffix,
+}
 
 blob_fixups: blob_fixups_user_type = {
 "vendor/lib/hw/camera.msm8953.so": blob_fixup().add_needed("libui_shim.so"),
@@ -38,6 +40,7 @@ module = ExtractUtilsModule(
     'onclite',
     'xiaomi',
     blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
 
