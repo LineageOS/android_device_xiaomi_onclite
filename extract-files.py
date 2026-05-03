@@ -17,6 +17,7 @@ from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
+
 namespace_imports = [
 	"hardware/qcom-caf/msm8953", 
 	"hardware/qcom/wlan/legacy",
@@ -24,9 +25,10 @@ namespace_imports = [
 	"vendor/qcom/opensource/display",
 	"hardware/xiaomi"
 ]
-lib_fixups: lib_fixups_user_type = {
-    **lib_fixups: lib_fixup_vendor_suffix,
-}
+
+
+
+lib_fixups: lib_fixups_user_type = {**lib_fixups}
 
 blob_fixups: blob_fixups_user_type = {
 "vendor/lib/hw/camera.msm8953.so": blob_fixup().add_needed("libui_shim.so"),
