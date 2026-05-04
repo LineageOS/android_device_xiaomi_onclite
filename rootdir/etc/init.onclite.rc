@@ -54,3 +54,8 @@ on property:sys.fp.vendor=goodix
 
 on property:sys.fp.vendor=FPC
    setprop ro.boot.fpsensor fpc
+   
+# Vibrator
+on early-boot
+    chown system system /sys/class/leds/vibrator/vmax_mv
+    chmod 0600 /sys/class/leds/vibrator/vmax_mv

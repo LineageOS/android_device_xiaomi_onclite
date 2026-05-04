@@ -399,11 +399,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.basic
 
-# Vibrator
-TARGET_USES_DEVICE_SPECIFIC_VIBRATOR := true
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.3-service.xiaomi_onclite
-
 # VINTF
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 
