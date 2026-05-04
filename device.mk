@@ -402,6 +402,8 @@ PRODUCT_PACKAGES += \
 # VINTF
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 
+# HWComposer
+PRODUCT_PACKAGES += hwcomposer.msm8953
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
