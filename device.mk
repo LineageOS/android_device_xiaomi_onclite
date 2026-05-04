@@ -97,7 +97,8 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
-    vendor.display.config@1.9 \
+    vendor.display.config@1.11 \
+    vendor.display.config@2.0.vendor \
     vendor.qti.hardware.memtrack-service
 
 # Doze mode
@@ -106,7 +107,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey
 
 # Fastboot
@@ -130,7 +131,7 @@ PRODUCT_PACKAGES += \
 
 # GNSS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0.vendor
+    android.hardware.gnss@2.1.vendor
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -209,8 +210,12 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
+    vendor.lineage.livedisplay-service.sdm \
+    vendor.lineage.livedisplay-service.sysfs
 
+$(call soong_config_set,livedisplay_sdm,enable_dm,false)
+$(call soong_config_set,livedisplay_sysfs,enable_ab,true)
+$(call soong_config_set,livedisplay_sysfs,enable_ce,true)
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -293,7 +298,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     android.hardware.power-service-qti \
-    vendor.qti.hardware.perf@2.0.vendor
+    vendor.qti.hardware.perf@2.2.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
@@ -403,7 +408,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 
 # HWComposer
-PRODUCT_PACKAGES += hwcomposer.msm8953
+PRODUCT_PACKAGES += hwcomposer.qcom
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \

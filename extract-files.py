@@ -34,7 +34,8 @@ blob_fixups: blob_fixups_user_type = {
 "vendor/lib/hw/camera.msm8953.so": blob_fixup().add_needed("libui_shim.so"),
 "vendor/lib/lib_lowlight.so":blob_fixup().replace_needed("libstdc++.so","libstdc++_vendor.so"),
 "vendor/lib64/hw/fingerprint.goodix.default.so":blob_fixup().replace_needed("libvendor.goodix.hardware.fingerprint@1.0.so", "vendor.goodix.hardware.fingerprint@1.0.so"),
-"vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so":blob_fixup().replace_needed("libvendor.goodix.hardware.fingerprint@1.0.so", "vendor.goodix.hardware.fingerprint@1.0.so")
+"vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so":blob_fixup().replace_needed("libvendor.goodix.hardware.fingerprint@1.0.so", "vendor.goodix.hardware.fingerprint@1.0.so"),
+"vendor/lib64/libwvhidl.so": blob_fixup().add_needed("libcrypto_shim.so"),
 }
 
 
